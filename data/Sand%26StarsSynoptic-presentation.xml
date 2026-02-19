@@ -33,23 +33,23 @@
                          <licence target="https://creativecommons.org/licenses/by/4.0/">
                               Creative Commons Attribution 4.0 International (CC-BY 4.0)
                          </licence>
+                         <p>This digital edition was prepared during 2023–2025 in the framework of the
+                              Deutsches Zentralinstitut für soziale Fragen (DZI) project (see
+                              https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/)
+                              by the project team, under Sinai Rusinek's supervision at the Elijah Lab,
+                              Haifa University, with support from the digiS funding programme (Zuse-Institute
+                              at the Free University Berlin). The sources (an original manuscript and its two
+                              translations) were transcribed and corrected using Transkribus
+                              (https://readcoop.eu/transkribus/). The synopsis alignment was done by S.R.
+                              using the XML-Planter (https://xmlplanter.dh-dev.com/), developed by Gil
+                              Shalit who also set up the TEI-Publisher platform for the edition.</p>
                     </availability>
-                    <p>This digital edition was prepared during 2023–2025 in the framework of the
-                         Deutsches Zentralinstitut für soziale Fragen (DZI) project (see
-                         https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/)
-                         by the project team, under Sinai Rusinek's supervision at the Elijah Lab,
-                         Haifa University, with support from the digiS funding programme (Zuse-Institute
-                         at the Free University Berlin). The sources (an original manuscript and its two
-                         translations) were transcribed and corrected using Transkribus
-                         (https://readcoop.eu/transkribus/). The synopsis alignment was done by S.R.
-                         using the XML-Planter (https://xmlplanter.dh-dev.com/), developed by Gil
-                         Shalit who also set up the TEI-Publisher platform for the edition.</p>
                </publicationStmt>
                <sourceDesc>
                     <msDesc>
                          <msIdentifier>
-                              <repository>Central Zionist Archive (CZA)</repository>
                               <settlement>Jerusalem</settlement>
+                              <repository>Central Zionist Archive (CZA)</repository>
                               <idno>A149/10</idno>
                          </msIdentifier>
                          <msContents>
@@ -12909,7 +12909,7 @@
                               <div type="chapter" xml:id="Heb_0_0">
                                    <pb xml:id="Heb_p2"/>
                                    <head type="chapter">חול וכוכבים</head>
-                                   
+                                   <epigraph>
                                         <l> ירח יגיה, כוכבי רום יזהירו,</l>
                                         <l> על הר ועל גיא ליל יחשך.</l>
                                         <l> ספר נושן לפני יפתח;</l>
@@ -12922,8 +12922,9 @@
                                         <l> גם צרור לעולם לא יפל.</l>
                                         <l> רצון קדשך הוא יקום והוא יהי,</l>
                                         <l> כי עת ומועד הם לכל.</l>
-                                         פרוג<ref target="#note-Frug" type="noteAnchor">*</ref>. 
-                                   
+                                        <p>פרוג<ref target="#note-Frug" type="noteAnchor">*</ref>.</p>
+                                   </epigraph>
+
                                    <fw type="pageNum">1</fw>
 
                                    <head type="section">הקדמה</head>
