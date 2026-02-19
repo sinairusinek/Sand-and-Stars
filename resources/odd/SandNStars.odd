@@ -696,7 +696,6 @@ font-weight:bold;
             margin-bottom:1rem
             </outputRendition>
         </model></elementSpec>
-                <elementSpec ident="milestone" mode="change"><model behaviour="omit"/></elementSpec>
                 <elementSpec ident="add" mode="change"><model behaviour="alternate">
             <param name="alternate" value="'Addition'"/>
             <param name="default" value="."/>

@@ -1,0 +1,66 @@
+{
+  "title": "Sand and Stars: A Synoptic Digital Edition",
+  "description": "A synoptic documentary digital edition of Siddy Wronsky's unpublished novel 'Sand und Sterne. Erzählung aus dem Lande Israel' (Sand and Stars. A Tale from the Land of Israel), written between 1933 and 1939. The edition presents three parallel versions — the German original manuscript, a Hebrew translation by Yossef Achai, and an anonymous English translation — aligned at the sub-sentence level in TEI XML. The manuscript was discovered in 2017 at the Central Zionist Archive (CZA) in Jerusalem (A149/10). Created in the framework of the DZI digitisation project by the Elijah Lab for Digital Humanities, University of Haifa.",
+  "creators": [
+    {
+      "name": "Rusinek, Sinai",
+      "orcid": "0000-0003-1043-7954",
+      "affiliation": "Elijah Lab for Digital Humanities, University of Haifa"
+    },
+    {
+      "name": "Pigorsch, Stephanie",
+      "orcid": "0009-0000-3194-503X",
+      "affiliation": "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+    },
+    {
+      "name": "Halpern, Ayana",
+      "affiliation": "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+    },
+    {
+      "name": "Lau, Dayana",
+      "affiliation": "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+    },
+    {
+      "name": "Shalit, Gil",
+      "affiliation": "Elijah Lab for Digital Humanities, University of Haifa"
+    },
+    {
+      "name": "Avnir, Yehudit"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "dataset",
+  "language": "deu",
+  "keywords": [
+    "TEI",
+    "digital edition",
+    "synoptic edition",
+    "documentary edition",
+    "Siddy Wronsky",
+    "Sand and Stars",
+    "Sand und Sterne",
+    "social work history",
+    "Zionism",
+    "migration",
+    "Palestine",
+    "German literature",
+    "Hebrew translation",
+    "Jewish history",
+    "gender"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://sand-and-stars.dzi.de:8443/exist/apps/Sand-and-Stars/index.html",
+      "relation": "isSupplementedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://github.com/sinairusinek/Sand-and-Stars",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "references": [
+    "Avnir, Y., Halpern, A., Lau, D., Pigorsch, S., & Wilke, B. (Eds.). (2025). Siddy Wronsky. Sand und Sterne – חול וכוכבים – Sand and Stars. Edition of the 1930's Novel in the Context of Jewish History, Gender and Social Work. Nomos."
+  ]
+}

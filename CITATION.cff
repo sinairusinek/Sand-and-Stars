@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+title: "Sand and Stars: A Synoptic Digital Edition"
+message: "If you use this edition, please cite it using the metadata from this file."
+type: dataset
+authors:
+  - family-names: Rusinek
+    given-names: Sinai
+    orcid: "https://orcid.org/0000-0003-1043-7954"
+    affiliation: "Elijah Lab for Digital Humanities, University of Haifa"
+  - family-names: Pigorsch
+    given-names: Stephanie
+    orcid: "https://orcid.org/0009-0000-3194-503X"
+    affiliation: "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+  - family-names: Halpern
+    given-names: Ayana
+    affiliation: "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+  - family-names: Lau
+    given-names: Dayana
+    affiliation: "Deutsches Zentralinstitut für soziale Fragen (DZI)"
+  - family-names: Shalit
+    given-names: Gil
+    affiliation: "Elijah Lab for Digital Humanities, University of Haifa"
+  - family-names: Avnir
+    given-names: Yehudit
+license: CC-BY-4.0
+date-released: "2025-02-19"
+url: "https://github.com/sinairusinek/Sand-and-Stars"
+repository-code: "https://github.com/sinairusinek/Sand-and-Stars"
+keywords:
+  - TEI
+  - digital edition
+  - synoptic edition
+  - Siddy Wronsky
+  - social work history
+  - Zionism
+  - migration
+references:
+  - type: book
+    title: "Siddy Wronsky. Sand und Sterne – חול וכוכבים – Sand and Stars. Edition of the 1930's Novel in the Context of Jewish History, Gender and Social Work"
+    authors:
+      - family-names: Avnir
+        given-names: Yehudit
+      - family-names: Halpern
+        given-names: Ayana
+      - family-names: Lau
+        given-names: Dayana
+      - family-names: Pigorsch
+        given-names: Stephanie
+      - family-names: Wilke
+        given-names: Boris
+    year: 2025
+    publisher:
+      name: Nomos

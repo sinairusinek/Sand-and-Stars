@@ -2,31 +2,154 @@
      <teiHeader>
           <fileDesc>
                <titleStmt>
-                    <title>Sand and Stars Synoptic Edition</title>
+                    <title>Sand and Stars: A Synoptic Digital Edition</title>
+                    <title type="sub">Sand und Sterne. Erzählung aus dem Lande Israel</title>
+                    <author>Siddy Wronsky</author>
+                    <editor xml:id="SR" role="principal">Sinai Rusinek</editor>
+                    <editor xml:id="SP">Stephanie Pigorsch</editor>
+                    <respStmt>
+                         <resp>Transcription, annotation, research</resp>
+                         <name xml:id="AH">Ayana Halpern</name>
+                    </respStmt>
+                    <respStmt>
+                         <resp>Transcription, annotation</resp>
+                         <name xml:id="DL">Dayana Lau</name>
+                    </respStmt>
+                    <respStmt>
+                         <resp>Technical development (XML-Planter, TEI Publisher)</resp>
+                         <name xml:id="GS">Gil Shalit</name>
+                    </respStmt>
+                    <respStmt>
+                         <resp>Research consulting</resp>
+                         <name xml:id="YA">Yehudit Avnir</name>
+                    </respStmt>
                </titleStmt>
                <publicationStmt>
-                    <p>This digital edition was prepared during 2023 in the framework of the
+                    <publisher>Elijah Lab for Digital Humanities, University of Haifa</publisher>
+                    <publisher>Deutsches Zentralinstitut für soziale Fragen (DZI)</publisher>
+                    <date when="2025">2025</date>
+                    <availability status="free">
+                         <licence target="https://creativecommons.org/licenses/by/4.0/">
+                              Creative Commons Attribution 4.0 International (CC-BY 4.0)
+                         </licence>
+                    </availability>
+                    <p>This digital edition was prepared during 2023–2025 in the framework of the
                          Deutsches Zentralinstitut für soziale Fragen (DZI) project (see
                          https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/)
                          by the project team, under Sinai Rusinek's supervision at the Elijah Lab,
-                         Haifa University. The sources (an original manuscript and its two
+                         Haifa University, with support from the digiS funding programme (Zuse-Institute
+                         at the Free University Berlin). The sources (an original manuscript and its two
                          translations) were transcribed and corrected using Transkribus
                          (https://readcoop.eu/transkribus/). The synopsis alignment was done by S.R.
                          using the XML-Planter (https://xmlplanter.dh-dev.com/), developed by Gil
                          Shalit who also set up the TEI-Publisher platform for the edition.</p>
                </publicationStmt>
                <sourceDesc>
-                    <p>The Central Zionist Archive, A149\10</p>
+                    <msDesc>
+                         <msIdentifier>
+                              <repository>Central Zionist Archive (CZA)</repository>
+                              <settlement>Jerusalem</settlement>
+                              <idno>A149/10</idno>
+                         </msIdentifier>
+                         <msContents>
+                              <summary>Three versions of the unpublished novel "Sand und Sterne.
+                                   Erzählung aus dem Lande Israel" (Sand and Stars. A Tale from the
+                                   Land of Israel) by Siddy Wronsky, written between 1933 and 1939:
+                                   a 188-page German original manuscript likely authored and annotated
+                                   by Wronsky herself, an 84-page Hebrew translation by Yossef Achai,
+                                   and a 109-page English translation by an anonymous hand.</summary>
+                              <textLang mainLang="de" otherLangs="he en">German, Hebrew,
+                                   English</textLang>
+                         </msContents>
+                         <physDesc>
+                              <objectDesc>
+                                   <p>Typewritten manuscripts with handwritten corrections and
+                                        annotations.</p>
+                              </objectDesc>
+                         </physDesc>
+                    </msDesc>
+                    <listBibl>
+                         <bibl type="related">Avnir, Y., Halpern, A., Lau, D., Pigorsch, S., &amp;
+                              Wilke, B. (Eds.). (2025). <title>Siddy Wronsky. Sand und Sterne –
+                                   חול וכוכבים – Sand and Stars. Edition of the 1930's Novel in the
+                                   Context of Jewish History, Gender and Social Work</title>.
+                              Nomos.</bibl>
+                    </listBibl>
                </sourceDesc>
           </fileDesc>
+          <encodingDesc>
+               <projectDesc>
+                    <p>This synoptic digital edition was created as part of the DZI digitisation
+                         project, uniting the German Central Institute for Social Issues (DZI) and the
+                         e-Lijah Lab for Digital Humanities at the University of Haifa, with support
+                         from the digiS funding programme. The project aims to bring Siddy Wronsky's
+                         multilingual novel to a modern audience through a parallel presentation of
+                         the German original alongside its Hebrew and English translations.</p>
+               </projectDesc>
+               <editorialDecl>
+                    <correction>
+                         <p>Clear and simple typos were corrected silently. Where correction was
+                              crucial for understanding, the original spelling was marked with "sic"
+                              and a correction suggestion with "corr" within choice elements. Uncertain
+                              cases were discussed in editorial notes.</p>
+                    </correction>
+                    <normalization>
+                         <p>The edition follows a hybrid approach between diplomatic transcription and
+                              normalization. The choice element in TEI preserves both the original and
+                              corrected/normalized forms.</p>
+                    </normalization>
+                    <interpretation>
+                         <p>Deletions and additions in the two translation versions were normally
+                              accepted into the transcription without annotation. In the German
+                              manuscript, where manual additions and deletions represent Wronsky's own
+                              creation process, they were annotated using add and del elements. Named
+                              entities (persons, places, organizations) were identified and where
+                              possible linked to external authority files. Editorial notes provide
+                              historical, cultural, and codicological commentary.</p>
+                    </interpretation>
+                    <segmentation>
+                         <p>The three text versions were manually aligned at a sub-sentence level into
+                              intellectually coherent sense sections (Sinnabschnitte) using the
+                              XML-Planter tool. Each segment carries an xml:id with the pattern
+                              {Version}_{Section}_{Chapter}_{Segment} enabling cross-version
+                              synchronisation.</p>
+                    </segmentation>
+               </editorialDecl>
+          </encodingDesc>
+          <profileDesc>
+               <langUsage>
+                    <language ident="de">German (original manuscript)</language>
+                    <language ident="en">English (anonymous translation)</language>
+                    <language ident="he">Hebrew (translation by Yossef Achai)</language>
+               </langUsage>
+               <textClass>
+                    <keywords>
+                         <term>historical fiction</term>
+                         <term>social work</term>
+                         <term>Zionism</term>
+                         <term>migration</term>
+                         <term>Palestine</term>
+                         <term>gender</term>
+                         <term>synoptic edition</term>
+                         <term>documentary edition</term>
+                    </keywords>
+               </textClass>
+               <creation>
+                    <date notBefore="1933" notAfter="1939">c. 1933–1939</date>
+               </creation>
+          </profileDesc>
           <revisionDesc>
-               <change>Sinai Rusinek 2025-04-05. Incorporating last proofreading
+               <change when="2025-02-19" who="#SR">Prepared edition for TextGrid and Zenodo deposit:
+                    enriched teiHeader, added license, removed unused milestone elements,
+                    fixed attribute typos.</change>
+               <change when="2025-05-24" who="#SR">Correcting more typos, e.g. ברובוי-בריבוי</change>
+               <change when="2025-04-27" who="#SR">Enriching comments with references, clearing
+                    spaces and reviewing notes (up to 1.1)</change>
+               <change when="2025-04-16" who="#SR">Commenting out all 'insignificant' sics in the
+                    edition, leaving only major corrections</change>
+               <change when="2025-04-05" who="#SR">Incorporating last proofreading
                     corrections</change>
-               <change>Sinai Rusinek 2025-04-16. Commenting out all 'insignificant' sics in the
-                    edition, leaving only major corrections</change><change>Sinai Rusinek 2025-04-27. Enriching comments with references, clearing spaces and reviewing notes (up to 1.1)</change><change>2025-5-24 correcting more typos, e.g. ברובוי-בריבוי</change>
           </revisionDesc>
-
-
      </teiHeader>
      <text>
           <group>
@@ -38,7 +161,6 @@
                                    <head type="section">Einleitung:</head>
                                    <lb/>
                                    <pb xml:id="De_p2"/>
-                                   <milestone unit="4"/>
                                    <head type="chapter"> Das Land </head>
                                    <p xml:id="De_0001">
                                         <s xml:id="De_0_0_001">Es gibt ein Land in der Welt, von dem
@@ -77,8 +199,7 @@
                                         <s xml:id="De_0_0_007">Sie wandern mit den Erzvätern hinauf
                                              in das Land der Verheißung, sie weinen mit der Mutter
                                                   <persName>Rachel</persName> um das Leid ihrer
-                                             Kinder, sie<milestone unit="5"/>
-                                             <fw type="pageNum">3</fw> träumen mit dem jungen
+                                             Kinder, sie <fw type="pageNum">3</fw> träumen mit dem jungen
                                                   <persName>Joseph</persName> die Träume seines
                                              Ruhmes, sie kehren heim auf dem langen Wüstenweg mit
                                              ihrem Führer <persName>Moses</persName>, sie jubeln im
@@ -124,8 +245,7 @@
                                              ihren Feiern.</s>
                                         <lb/>
                                         <s xml:id="De_0_0_010">Und dieses Land liegt einsam und
-                                             verlassen, öde und<milestone unit="6"/>
-                                             <fw type="pageNum">4</fw> unbebaut, ohne Bäume und ohne
+                                             verlassen, öde und <fw type="pageNum">4</fw> unbebaut, ohne Bäume und ohne
                                              Felder, ohne Leben auf seinen Straßen und in seinen
                                              Wohnstätten.</s>
                                         <s xml:id="De_0_0_011"> Das Land, es wartet in der großen
@@ -168,8 +288,7 @@
                                         <s xml:id="De_0_0_020">Es belebt die Wege und die breiten
                                              Straßen des Landes.</s>
                                         <s xml:id="De_0_0_021">Es spricht wieder die alte Sprache
-                                             seiner Väter und es verbindet sich wieder<milestone unit="7"/>
-                                             <fw type="pageNum">5</fw> mit seiner Natur.</s>
+                                             seiner Väter und es verbindet sich wieder <fw type="pageNum">5</fw> mit seiner Natur.</s>
                                         <lb/>
                                         <s xml:id="De_0_0_021a">Dieses Land ist das kleinste Land
                                              der Welt, ein schmaler Streifen zwischen drei Erdteilen
@@ -215,8 +334,7 @@
                                         <s xml:id="De_0_0_031">Dort verströmt er sich in den
                                              salzigen Wogen.</s>
                                         <s xml:id="De_0_0_032">Auf die Wogen um ihn blicken die
-                                             steilen Abhänge mit ihren<milestone unit="8"/>
-                                             <fw type="pageNum">6</fw> schwarzen und violetten
+                                             steilen Abhänge mit ihren <fw type="pageNum">6</fw> schwarzen und violetten
                                              Schatten, auf dem dunklen Boden des Meeres umspült er
                                              die geheimnisvollen Schätze, die <add>der
                                                   Menschheit</add>
@@ -256,8 +374,7 @@
                                         <s xml:id="De_0_0_037">Neben der Stadt Tel Awiw breitet sich
                                              die alte Felsenfestung <placeName>Jaffa</placeName>
                                              aus, um die im Kampf der Jahrtausende viele Völker
-                                             gerungen haben,<milestone unit="9"/>
-                                             <fw type="pageNum">7</fw> die Heiligtum war von fremden
+                                             gerungen haben, <fw type="pageNum">7</fw> die Heiligtum war von fremden
                                              Göttern und die auf ihrem felsigen Hügel an sich zog
                                              das Gold und die Edelsteine der fremden Welt, die Stadt
                                              der Araber mit ihren langen Gewändern und ihren
@@ -299,8 +416,7 @@
                                              geben ihr bunte Bewegung.</s>
                                         <s xml:id="De_0_0_046">In dieser Ebene lebt und entwickelt
                                              sich das neue jüdische Volk. Es bebaut seinen Boden und
-                                             erzieht seine Jugend.Es bildet<milestone unit="10"/>
-                                             <fw type="pageNum">8</fw> seine eigenen Gesetze und
+                                             erzieht seine Jugend.Es bildet <fw type="pageNum">8</fw> seine eigenen Gesetze und
                                              erfüllt sein Dasein mit Arbeit und Gemeinschaft.</s>
                                         <s xml:id="De_0_0_047">Es schafft neues Leben seinem Volk
                                              auf seiner Heimaterde in seinem heiligen Land, dessen
@@ -314,7 +430,6 @@
 
                               <div type="chapter" xml:id="De_1_1">
                                    <head type="section"> I. Aufbruch</head>
-                                   <milestone unit="11"/>
                                    <pb xml:id="De_p3"/>
                                    <fw type="pageNum">9</fw>
 
@@ -364,7 +479,6 @@
                                              können, deren Namen sie trug.</s>
                                         <lb/>
                                         <s xml:id="De_1_1_012">
-                                             <milestone unit="12"/>
                                              <fw type="pageNum">10</fw> Die Kinder fühlten sich tief
                                              ergriffen, als sie sie so erblickten.</s>
                                         <s xml:id="De_1_1_013">Sie waren gewohnt, sie als ihre
@@ -405,8 +519,7 @@
                                         <s xml:id="De_1_1_021">
                                              <lb/> Eva, der Klugen, mit den blauen herzlichen Augen,
                                              deren Vater bei den Verfolgungen <add>der Juden in
-                                                  Russland</add> ermordet wurde<milestone unit="13"/>
-                                             <fw type="pageNum">11</fw> und deren Mutter in ein
+                                                  Russland</add> ermordet wurde <fw type="pageNum">11</fw> und deren Mutter in ein
                                              fernes Land jenseits des Ozeans flüchtete, die kein
                                              Elternheim gekannt hatte in den Jahren ihrer Kindheit,
                                              galt das kleine Buch von den Bäumen im Lande
@@ -444,8 +557,7 @@
                                         <s xml:id="De_1_1_026">Hannahs Weg sollte in die
                                              Geflügelfarm gehen, um dort in der Wirtschaft
                                              Palästinas zu arbeiten, den kleinen Küken zum Leben zu
-                                             verhelfen und das Land<milestone unit="14"/>
-                                             <fw type="pageNum">12</fw> mit Eiern und Federn zu
+                                             verhelfen und das Land <fw type="pageNum">12</fw> mit Eiern und Federn zu
                                              versorgen.</s>
                                         <s xml:id="De_1_1_027"> Sie wird mit der nächsten Gruppe
                                              nachkommen und in das fröhliche Kinderdorf auf dem
@@ -481,8 +593,7 @@
                                         <s xml:id="De_1_1_033">
                                              <lb/> Am Bett jedes Kindes hatte Rachel verweilt mit
                                              stillem Streichen und Abschiednehmen.</s>
-                                        <s xml:id="De_1_1_034"> Dann war sie langsam<milestone unit="15"/>
-                                             <fw type="pageNum">13</fw> die Treppen herabgestiegen
+                                        <s xml:id="De_1_1_034"> Dann war sie langsam <fw type="pageNum">13</fw> die Treppen herabgestiegen
                                              in dem grauen Haus, wo die Kinder in eifriger Arbeit
                                              schafften.</s>
                                         <s xml:id="De_1_1_035"> Sie half ihnen, grüne Zweige zu
@@ -516,8 +627,7 @@
                                              Kleider, die Bücher und die Werkzeuge und die
                                              Liebesgaben der Freunde verpackt wurden.</s>
                                         <s xml:id="De_1_1_039"> Wie lustig sah es aus zwischen
-                                                  Malkästen<milestone unit="16"/>
-                                             <fw type="pageNum">14</fw> und Lichtbildapparaten,
+                                                  Malkästen <fw type="pageNum">14</fw> und Lichtbildapparaten,
                                              Füllfedern und Tagebüchern, Bildern, Nähkästen,
                                              Federmessern, Süßigkeiten, die für den Weg bereitet
                                              wurden mit großer Sorgfalt, damit den Kindern nichts
@@ -552,8 +662,7 @@
                                         <s xml:id="De_1_1_045">
                                              <lb/>Zwölf Jahre hatten die Frauen gesorgt für die
                                              einsamen Kinder, als sie im Hungerjahr nach dem Ende
-                                             des Weltkrieges<milestone unit="17"/>
-                                             <fw type="pageNum">15</fw> in die große Stadt gekommen
+                                             des Weltkrieges <fw type="pageNum">15</fw> in die große Stadt gekommen
                                              waren; eine Schar von Kindern mit verängstigten Augen,
                                              die das Morden und Sengen erlebt hatten, das der Hass
                                              gegen ihr Volk entzündet, sich über sie geworfen und
@@ -586,7 +695,6 @@
                                              und den Gängen, aus den Stuben und der Küche, vom Hof
                                              und vom Keller.</s>
                                         <s xml:id="De_1_1_051">
-                                             <milestone unit="18"/>
                                              <fw type="pageNum">16</fw> Rachel schritt heraus in den
                                              Vorraum des Hauses, dort ordneten sich die Kinder zu
                                              Paaren nach den Klängen der Flöte des jungen David,
@@ -624,8 +732,7 @@
                                              großen Halle, in der die jungen Auswanderer zum letzten
                                              Mal vereint sein sollten mit ihren Erziehern und
                                              Lehrern, den Arbeitern des Hauses und dem Vorstand des
-                                             Heims, den Ältesten<milestone unit="19"/>
-                                             <fw type="pageNum">17</fw> der Gemeinde und den
+                                             Heims, den Ältesten <fw type="pageNum">17</fw> der Gemeinde und den
                                                   Rabbinern.<ref target="#note-Rabbis" type="noteAnchor">*</ref></s>
                                         <s xml:id="De_1_1_060"> Den Kleinen folgten die Schulkinder
                                              und hinter ihnen die Gruppe der Ausziehenden, Knaben
@@ -664,7 +771,6 @@
                                              "Hatikwah", das Lied der Hoffnung für die Ausziehenden,
                                              das Lied der Sehnsucht für die Zurückbleibenden.</s>
                                         <s xml:id="De_1_1_067">
-                                             <milestone unit="20"/>
                                              <fw type="pageNum">18</fw> Langsam stieg der Zug der
                                              Kinder auf in die große Halle, die zur Feier des
                                              Aufbruchs gerüstet war.</s>
@@ -703,8 +809,7 @@
                                              zwölf Jahren als verlassene Waisen einzogen in dieses
                                              Haus, unbeachtet in der Millionenstadt des Nordens.</s>
                                         <s xml:id="De_1_1_076">Er hat sie vorbereitet für den
-                                                  Tag,<milestone unit="21"/>
-                                             <fw type="pageNum">19</fw> da sie zum ersten Mal im
+                                                  Tag, <fw type="pageNum">19</fw> da sie zum ersten Mal im
                                              Gotteshaus vor den Altar des Herrn traten, um als Söhne
                                              des Bundes das Wort der heiligen Schrift der Gemeinde
                                              zu verkünden.</s>
@@ -740,8 +845,7 @@
                                              gebunden an das Wohlleben in der Großstadt und den
                                              Nutzen seiner Stellung in der Gemeinde.</s>
                                         <s xml:id="De_1_1_085">Innig blickte er auf die junge Schar,
-                                             die ihr Leben einzusetzen bereit<milestone unit="22"/>
-                                             <fw type="pageNum">20</fw> ist für die Erfüllung ihrer
+                                             die ihr Leben einzusetzen bereit <fw type="pageNum">20</fw> ist für die Erfüllung ihrer
                                              Ideale, die die seinen gewesen sind, auf diese Schar,
                                              die nun statt seiner hinausgehen wird in das Land
                                              Israel.</s>
@@ -774,8 +878,7 @@
                                              eigenes glückliches und reiches Leben, sondern es war
                                              der Sinn dieses Wortes an Abraham unseren Urvater, den
                                              Segen zu empfangen, um seinem Volke die Kraft zu geben,
-                                             in der neuen Heimat zu <milestone unit="23"/>
-                                             <fw type="pageNum">21</fw> verwurzeln und sich zu
+                                             in der neuen Heimat zu <fw type="pageNum">21</fw> verwurzeln und sich zu
                                              entwickeln.</s>
                                         <s xml:id="De_1_1_090"> In dieser heiligen Stunde, wo Euch,
                                              meine lieben jungen Freunde, unsere Gemeinschaft
@@ -815,8 +918,7 @@
                                              zum Abschied auf Euren Weg die beiden Wahrzeichen
                                              unseres Volkes, in Eure Rechte geben wir Euch den
                                              Wanderstab, der zum ersten Mal Euch führen wird von dem
-                                             Umherwandern um die<milestone unit="24"/>
-                                             <fw type="pageNum">22</fw> Welt in der Fremde zu der
+                                             Umherwandern um die <fw type="pageNum">22</fw> Welt in der Fremde zu der
                                              ewigen Heimat unseres Volkes, und in Eure Linke geben
                                              wir Euch die Bibel, das Buch unseres Volkes, das uns
                                              der Quell der Kraft war in den Jahrtausenden der
@@ -852,8 +954,7 @@
                                         <s xml:id="De_1_1_103"> "Gesegnet die Jugend unseres Volkes
                                              und mit ihr gesegnet Du, Mutter Bracha, die Du
                                              vereinigt hast in Deinem treuen Wirken in diesem Haus
-                                             die Liebe der Mutter zu ihren Kindern und die<milestone unit="25"/>
-                                             <fw type="pageNum">23</fw> Liebe der T<del>ö</del>
+                                             die Liebe der Mutter zu ihren Kindern und die <fw type="pageNum">23</fw> Liebe der T<del>ö</del>
                                              <add>o</add>chter zu ihrem Volke.</s>
                                         <s xml:id="De_1_1_104">Dir vertraut unsere Gemeinde an, was
                                              ihr Köstlichstes ist in dieser schweren Stunde unseres
@@ -890,8 +991,7 @@
                                              Erfüllung nahe und die Kinder den Weg der Vollbringung
                                              gehen.</s>
                                         <s xml:id="De_1_1_111"> In Deiner Hand, Bracha, Du Gute,
-                                                  liegt<milestone unit="26"/>
-                                             <fw type="pageNum">24</fw> das Schicksal unserer
+                                                  liegt <fw type="pageNum">24</fw> das Schicksal unserer
                                              Kinder.</s>
                                         <s xml:id="De_1_1_112"> Übermenschliches wird von Dir
                                              verlangt werden nach all den Jahren der Arbeit, und wir
@@ -928,8 +1028,7 @@
                                         <s xml:id="De_1_1_115">Im Reigenschritt fassten sich die
                                              Kinder an den Händen und stiegen unter den jauchzenden
                                              Klängen des Psalmliedes herab in den großen Speisesaal,
-                                             wo der <milestone unit="27"/>
-                                             <fw type="pageNum">25</fw> Festtisch gerichtet war zum
+                                             wo der <fw type="pageNum">25</fw> Festtisch gerichtet war zum
                                              letzten gemeinsamen Abendmahle.</s>
                                         <lb/>
                                         <s xml:id="De_1_1_116">In der Mitte der Tafel strahlten
@@ -967,7 +1066,6 @@
                                              ferner Zeit reichen sich die Hände, voran Mirjam mit
                                              der Zimbel.</s>
                                         <s xml:id="De_1_1_123">
-                                             <milestone unit="28"/>
                                              <fw type="pageNum">26</fw> Die Kinder erheben sich von
                                              ihren Sitzen und singend ziehen sie ihnen nach und
                                              verteilen sich in die Schlafsäle des grauen Hauses zum
@@ -975,7 +1073,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="De_1_2">
-                                   <milestone unit="29"/>
                                    <pb xml:id="De_p4"/>
                                    <fw type="pageNum">27</fw>
                                    <head type="chapter">Sand</head>
@@ -1015,7 +1112,6 @@
                                              Kraft seines Seins, Ruth mit ihren eilenden Bewegungen,
                                              ihrer zielvollen Behendigkeit.</s>
                                         <s xml:id="De_1_2_009">
-                                             <milestone unit="30"/>
                                              <fw type="pageNum">28</fw> Ihre starken rotblonden
                                              Zöpfe schwangen im Winde und ihre grauen Augen blickten
                                              fröhlich in die Ferne.</s>
@@ -1050,8 +1146,7 @@
                                         <s xml:id="De_1_2_015">
                                              <lb/>Die Geschwister schritten weiter durch den kleinen
                                              Bezirk der Vorstadt, in dem ärmliche Häuser im
-                                                  Dunklen<milestone unit="31"/>
-                                             <fw type="pageNum">29</fw> lagen.</s>
+                                                  Dunklen <fw type="pageNum">29</fw> lagen.</s>
                                         <s xml:id="De_1_2_016">Sie bogen ab in den einsamen Weg, der
                                              zum Friedhof der Gemeinschaft ihres Volkes führte.</s>
                                         <s xml:id="De_1_2_017">Sie wanderten schweigend in der Nacht
@@ -1084,8 +1179,7 @@
                                         <s xml:id="De_1_2_022"> Sie schritten vorbei an den
                                              bescheidenen Hügeln, unter denen Tausende des
                                              arbeitenden und leidenden jüdischen Volkes von ihren
-                                             schweren Wegen<milestone unit="32"/>
-                                             <fw type="pageNum">30</fw> ausruhten, vorbei an den
+                                             schweren Wegen <fw type="pageNum">30</fw> ausruhten, vorbei an den
                                              prächtigen Monumenten der Reichen aus gleißendem
                                              Marmor, vorbei an den Hügeln der Gelehrten und der
                                              Lernenden, der Weisen und der Toren, der Kinder und der
@@ -1114,8 +1208,7 @@
                                              grünten die Weiden und die Lebensbäume, rankte sich der
                                              breite Efeu um die Hügel; doch manches der Gräber
                                              begann langsam zu verfallen, ihre Laubdecken
-                                                  begannen<milestone unit="33"/>
-                                             <fw type="pageNum">31</fw> zu verwelken, da sich keine
+                                                  begannen <fw type="pageNum">31</fw> zu verwelken, da sich keine
                                              sorgsame Hand mehr ausstreckte zur Pflege, seit die
                                              Lieben verstreut waren durch rohe Gewalt in alle Lande
                                              der Welt; statt dem Grün des rankenden Blattes zeigten
@@ -1150,8 +1243,7 @@
                                              in immerwährendem Fleiß und unendlicher Güte ihr
                                              schweres Schicksal auf sich genommen, die für sie
                                              geschafft und gesorgt und die die Befreiung ihrer
-                                             Kinder durch<milestone unit="34"/>
-                                             <fw type="pageNum">32</fw> den Eintritt in die
+                                             Kinder durch <fw type="pageNum">32</fw> den Eintritt in die
                                              Wiederaufbaubewegung ihres Volkes und die ihre Heimkehr
                                              in das Land Israel nicht mehr erleben sollte.<ref target="#note-Sacrifice" type="noteAnchor">*</ref>
                                         </s>
@@ -1186,7 +1278,6 @@
                                              der Flöte von David und gingen über in das
                                              Sehnsuchtslied des jüdischen Sängers, in das die jungen
                                              Menschen leise einstimmten:</s>
-                                        <milestone unit="35"/>
                                         <fw type="pageNum">33</fw>
                                         <lg>
                                              <l>"Es leuchtet der Mond,</l>
@@ -1220,7 +1311,6 @@
                                              <l>Alles kommt zur Zeit </l>
                                              <l>und an seinem Ort.</l>
                                         </lg>
-                                        <milestone unit="36"/>
                                         <fw type="pageNum">34</fw>
                                         <lg>
                                              <l>Und eins ist schon erfüllt</l>
@@ -1254,8 +1344,7 @@
                                              Schaufel, die an der Seite lehnte, und begann, einen
                                              kleinen Sack mit der Erde des Grabes zu füllen.</s>
                                         <s xml:id="De_1_2_057">"Dies ist der letzte Abschied von
-                                             Dir, Mutter," sprach er<milestone unit="37"/>
-                                             <fw type="pageNum">35</fw> in seinen Gedanken, "der
+                                             Dir, Mutter," sprach er <fw type="pageNum">35</fw> in seinen Gedanken, "der
                                              letzte Abschied hier von Deiner Ruhestätte.</s>
                                         <s xml:id="De_1_2_058">Dieser Abschied kann keine Lösung von
                                              Dir sein, er ist eine heilige Bindung, ein Gelöbnis an
@@ -1288,8 +1377,7 @@
                                              südlichen Himmel im Lande Israel unsere Straße zeigen,
                                              unser Schaffen bestimmen, unser Leben ordnen.</s>
                                         <s xml:id="De_1_2_066">Wir wissen aus den Bahnen der Sterne,
-                                             dass der Aufbruch zu unserer<milestone unit="38"/>
-                                             <fw type="pageNum">36</fw> Heimaterde unserem
+                                             dass der Aufbruch zu unserer <fw type="pageNum">36</fw> Heimaterde unserem
                                              Umhergetriebensein ein Ende setzen wird, und dass
                                              dieselben Sterne, die zu Dir herniederblicken, unsere
                                              Mutter, am Himmel in der Heimat uns leuchten werden zu
@@ -1325,14 +1413,12 @@
                                              hin, in Gemeinschaft, zu schaffen den neuen Menschen
                                              auf der neuen Erde.</s>
                                         <s xml:id="De_1_2_074">
-                                             <milestone unit="39"/>
                                              <fw type="pageNum">37</fw> Seid fruchtbar und mehret
                                              Euch auf dem Boden unserer Heimat, dass heranwachse das
                                              neue Geschlecht im Lande Israel.</s>
                                    </p>
                               </div>
                               <div xml:id="De_1_3">
-                                   <milestone unit="40"/>
                                    <pb xml:id="De_p5"/>
                                    <fw type="pageNum">38</fw>
                                    <head type="chapter"> Der Aufbruch/Fahrt <ref target="#note-AufbruchTitle" type="noteAnchor">*</ref>
@@ -1368,8 +1454,7 @@
                                              für die Kameraden eine Gefahr bedeutete.</s>
                                         <s xml:id="De_1_3_009">Er fuhr vorbei an den tiefen
                                              Schächten der Erdbahn, in die die Menschen hinabeilten,
-                                             ohne einen Blick auf die Umwelt<milestone unit="41"/>
-                                             <fw type="pageNum">39</fw> zu werfen, um rechtzeitig
+                                             ohne einen Blick auf die Umwelt <fw type="pageNum">39</fw> zu werfen, um rechtzeitig
                                              die Anfangsstunde ihrer Arbeit zu erreichen.</s>
                                         <s xml:id="De_1_3_010">Er hörte den Marschtritt der Soldaten
                                              in den braunen Uniformen, die die Fahnen hochschwangen
@@ -1402,8 +1487,7 @@
                                              Gesundheitshaus, die jedes einzelne der Kinder kennt,
                                              seit ihrem Eintritt in das graue Haus um jedes sich
                                              gesorgt hat und auch die letzten Untersuchungen über
-                                             die Gesundheit der auswandernden<milestone unit="42"/>
-                                             <fw type="pageNum">40</fw> Kinder geleitet hat, um sie
+                                             die Gesundheit der auswandernden <fw type="pageNum">40</fw> Kinder geleitet hat, um sie
                                              scharen sich die Lehrer und die Erzieher.</s>
                                         <s xml:id="De_1_3_018">Noch einmal treten die Kinder
                                              zusammen mit den Kameraden und Freunden, mit den
@@ -1437,8 +1521,7 @@
                                              aufgezogen hat und von denen sie Abschied nehmen
                                              muss.</s>
                                         <s xml:id="De_1_3_024">Ein Lächeln geht über ihre Züge,
-                                                  als<milestone unit="43"/>
-                                             <fw type="pageNum">41</fw> die Kleinen ihr zurufen:
+                                                  als <fw type="pageNum">41</fw> die Kleinen ihr zurufen:
                                              "Trauere nicht, Mutter Bracha, wir kommen bald, auf
                                              Wiedersehen im Lande Israel!" <lb/>Die Autobusse
                                              rattern hinaus aus der grauen Straße, hinein in die
@@ -1473,8 +1556,7 @@
                                              und Kameraden, Helfer und Freunde.</s>
                                         <s xml:id="De_1_3_033">
                                              <lb/> Jeder gibt einen Gruß zum letzten Abschied.</s>
-                                        <s xml:id="De_1_3_034">Ein frohes<milestone unit="44"/>
-                                             <fw type="pageNum">42</fw> und schmerzliches
+                                        <s xml:id="De_1_3_034">Ein frohes <fw type="pageNum">42</fw> und schmerzliches
                                              Winken.</s>
                                         <s xml:id="De_1_3_035"> Niemand von den anderen Reisenden
                                              wird begleitet mit so viel Liebe und Sehnsucht, so viel
@@ -1511,8 +1593,7 @@
                                              Frieden und zur Eintracht zu finden.</s>
                                         <s xml:id="De_1_3_043">Seine Vision: "Solch ein Getümmel
                                              möcht' ich sehn, auf freiem Grund mit freiem Volke
-                                                  stehn"<ref target="#note-Faust" type="noteAnchor">*</ref> hat nicht Eingang gefunden<milestone unit="45"/>
-                                             <fw type="pageNum">43</fw> in sein Volk und nicht
+                                                  stehn"<ref target="#note-Faust" type="noteAnchor">*</ref> hat nicht Eingang gefunden <fw type="pageNum">43</fw> in sein Volk und nicht
                                              Eingang in die Kultur der anderen Nationen.</s>
                                         <s xml:id="De_1_3_044">Warum ist es gerade uns beschieden,
                                              dem kleinsten und umhergetriebensten unter den Völkern,
@@ -1546,8 +1627,7 @@
                                         <s xml:id="De_1_3_050"> Die Leiden unseres Volkes in der
                                              Welt sind so groß, und zur Stunde größer als je, dass
                                              nur dies Eine uns erlösen kann: die Heimatscholle,
-                                                  die<milestone unit="46"/>
-                                             <fw type="pageNum">44</fw> wir uns nach Jahrtausenden
+                                                  die <fw type="pageNum">44</fw> wir uns nach Jahrtausenden
                                              erringen durch unserer Hände Arbeit und von der nichts
                                              uns lösen kann in aller Zukunft."</s>
                                         <s xml:id="De_1_3_051">"Du sprichst wahr", erwiderte Ruth,
@@ -1589,8 +1669,7 @@
                                              Gestaltung der Weltwirtschaft.</s>
                                         <s xml:id="De_1_3_055">
                                              <lb/>Auf dem Bahnhof stand eine Gruppe junger Juden
-                                                  aus<milestone unit="47"/>
-                                             <fw type="pageNum">45</fw> dem Kreise, dem Ruth und
+                                                  aus <fw type="pageNum">45</fw> dem Kreise, dem Ruth und
                                              Chaim angehörten; dem "Hashomer Hazair" (Der junge
                                              Wächter).</s>
                                         <s xml:id="De_1_3_056">Diese jungen Menschen, dunkel
@@ -1626,8 +1705,7 @@
                                              Durchführung gebracht hat.</s>
                                         <s xml:id="De_1_3_065"> Sie spricht ihnen von den großen
                                              Feuern, die vor der Kongresshalle in Basel<ref target="#note-congress" type="noteAnchor">*</ref>
-                                             flammen und die die Söhne des jüdischen <milestone unit="48"/>
-                                             <fw type="pageNum">46</fw> Volkes zusammenrufen aus
+                                             flammen und die die Söhne des jüdischen <fw type="pageNum">46</fw> Volkes zusammenrufen aus
                                              allen Teilen der Welt; von den Kongressen, zu denen
                                              Tausende Abgeordnete des jüdischen Volkes aus allen
                                              Ländern der Erde strömen, die von Mal zu Mal der Idee
@@ -1663,8 +1741,7 @@
                                              </cit></s>
                                         <s xml:id="De_1_3_070">Mit diesem kleinen stolzen Volk
                                              verbindet uns unser Schicksal, zu dessen Lösung uns
-                                                  die<milestone unit="49"/>
-                                             <fw type="pageNum">47</fw> gastliche Stätte der Stadt
+                                                  die <fw type="pageNum">47</fw> gastliche Stätte der Stadt
                                              Basel geholfen hat."</s>
                                         <lb/>
                                         <s xml:id="De_1_3_071">Weiter rollt der Zug in italienische
@@ -1706,8 +1783,7 @@
                                              dem er sich verbunden fühlt, dessen melodische Sprache
                                              er spricht, dessen süße Lieder er singt und dessen
                                              Frauen er liebt.</s>
-                                        <s xml:id="De_1_3_084"> Erzogen<milestone unit="50"/>
-                                             <fw type="pageNum">48</fw> zum Gesellschaftsmenschen,
+                                        <s xml:id="De_1_3_084"> Erzogen <fw type="pageNum">48</fw> zum Gesellschaftsmenschen,
                                              der das Allgemeine über das Einzelne setzt, ist ihm die
                                              Lehre des Staates Religion und die Geste der Rede
                                              Beschluss.</s>
@@ -1744,7 +1820,6 @@
                                         <lb/>
                                         <quote>
                                              <l>"Wogt des Kornes Meer,</l>
-                                             <milestone unit="51"/>
                                              <fw type="pageNum">49</fw>
                                              <l> Erklingt der Herde Lied,</l>
                                              <l>Ist's unser Land und seine Felder:</l>
@@ -1780,8 +1855,7 @@
                                              Fortgehen am Morgen.</s>
                                         <s xml:id="De_1_3_098">Diese wenigen Stunden mit Euch haben
                                              meine Sehnsucht erweckt und neue Kräfte, mir unbekannt,
-                                             lebendig gemacht; noch weiß ich nicht, ob ich<milestone unit="52"/>
-                                             <fw type="pageNum">50</fw> mich lösen kann von diesem
+                                             lebendig gemacht; noch weiß ich nicht, ob ich <fw type="pageNum">50</fw> mich lösen kann von diesem
                                              Land, mit seinen alten Bogen und Palästen, seinen
                                              Liedern und seinen Lehren, seinen Frauen und seiner
                                              Kunst; doch die Sehnsucht nach meinem Volk wird nicht
@@ -1818,7 +1892,6 @@
                                              Karte in die Hand geben, und dann beginnt der Aufstieg
                                              auf das Schiff.</s>
                                         <s xml:id="De_1_3_108">Langsam erklettern sie das Deck
-                                                  <milestone unit="53"/>
                                              <fw type="pageNum">51</fw> und sammeln sich an dem Bug
                                              des Schiffes.</s>
                                         <s xml:id="De_1_3_109">Im Hafen schart sich die jüdische
@@ -1857,7 +1930,6 @@
                                              Lande und nach dem Leben in den Städten.</s>
                                         <s xml:id="De_1_3_119">
                                              <lb/>Ruth ist mit den ersten Kindern hinaufgestiegen.
-                                                  <milestone unit="54"/>
                                              <fw type="pageNum">52</fw> Sie wandelt langsam durch
                                              den Raum an die Spitze des Schiffes.</s>
                                         <s xml:id="De_1_3_120">Sie blickt hinaus in die unendliche
@@ -1894,8 +1966,7 @@
                                              ihres Schaffens; sie erzählt von dem Leben, das sie
                                              führen wollen, einfach und schlicht, in Gemeinschaft
                                              und Freude.</s>
-                                        <s xml:id="De_1_3_128">Sie stimmt ihm zu<milestone unit="55"/>
-                                             <fw type="pageNum">53</fw> in der Schätzung der
+                                        <s xml:id="De_1_3_128">Sie stimmt ihm zu <fw type="pageNum">53</fw> in der Schätzung der
                                              Bedeutung, die der Ertrag des Landes für die Ausfuhr in
                                              andere Länder haben kann, doch ihr eigenes Schaffen
                                              wird dem Ertrag gewidmet sein, der ihrem Volke im Lande
@@ -1930,8 +2001,7 @@
                                         <s xml:id="De_1_3_137">"Ich danke Dir für das Vertrauen, das
                                              Du mir erweist, aber das Leben, in das Du mich stellen
                                              willst, ist nicht das Leben, das wir begehren.</s>
-                                        <s xml:id="De_1_3_138">Es ist<milestone unit="56"/>
-                                             <fw type="pageNum">54</fw> ein Einstellen in die
+                                        <s xml:id="De_1_3_138">Es ist <fw type="pageNum">54</fw> ein Einstellen in die
                                              Interessensphäre anderer, ein Durchführen ihrer Pläne
                                              um des Gewinnes willen.</s>
                                         <s xml:id="De_1_3_139"> Deine Pläne gehen hinaus in die
@@ -1968,8 +2038,7 @@
                                              eigener Kraft.</s>
                                         <s xml:id="De_1_3_150"> Es muss aufgehen in das Leben der
                                              Welt und muss teilnehmen am Treiben der Welt.</s>
-                                        <s xml:id="De_1_3_151">Nur dort wird es <milestone unit="57"/>
-                                             <fw type="pageNum">55</fw> Entwicklung und Größe
+                                        <s xml:id="De_1_3_151">Nur dort wird es <fw type="pageNum">55</fw> Entwicklung und Größe
                                              finden.</s>
                                         <s xml:id="De_1_3_152"> Dein Glaube gefällt mir, Ruth, Dein
                                              kluger Sinn und Dein ernster Wille.</s>
@@ -2005,8 +2074,7 @@
                                         <s xml:id="De_1_3_162">Er schickte den Boten seines Volkes
                                              fort und bewahrte seine Milliarden; eine Welt konnte er
                                              eröffnen der Freiheit und der Arbeit von Millionen
-                                             Verstreuten, er konnte der Geliebte und<milestone unit="58"/>
-                                             <fw type="pageNum">56</fw> Gesegnete seines Volkes
+                                             Verstreuten, er konnte der Geliebte und <fw type="pageNum">56</fw> Gesegnete seines Volkes
                                              werden - und er wählte die Rolle eines Türhüters seiner
                                              Schatzkammer.</s>
                                         <s xml:id="De_1_3_163"> Und um dieses Versagens willen
@@ -2041,8 +2109,7 @@
                                              entgegen.</s>
                                         <s xml:id="De_1_3_168">"Ich danke Dir im Namen unserer
                                              Freunde für Deine Gabe.</s>
-                                        <s xml:id="De_1_3_169">Sie ist ein Ausdruck Deines<milestone unit="59"/>
-                                             <fw type="pageNum">57</fw> Verstehens für die Forderung
+                                        <s xml:id="De_1_3_169">Sie ist ein Ausdruck Deines <fw type="pageNum">57</fw> Verstehens für die Forderung
                                              eines Kindes Deines Volkes; doch weh ist mir im Herzen
                                              um Dich, denn auch Du warst zu Größerem bestimmt.</s>
                                         <s xml:id="De_1_3_170">Du konntest Dein Volk sammeln und
@@ -2079,8 +2146,7 @@
                                         <s xml:id="De_1_3_178a"> Von den Bänken der Kinder tönen
                                              fröhliche Lieder und Rachel wendet sich langsam zum
                                              Kreise der Jugend, in deren Mitte Ruth sitzt und
-                                             beginnt, ein Märchen zu erzählen aus<milestone unit="60"/>
-                                             <fw type="pageNum">58</fw> den Sagen ihrer Heimat, in
+                                             beginnt, ein Märchen zu erzählen aus <fw type="pageNum">58</fw> den Sagen ihrer Heimat, in
                                              die sie zurückkehren werden; das Märchen von der
                                              Erlösung des toten König David; sie erzählt ihnen von
                                              den beiden Hirten, denen im Traum beim Scheine des
@@ -2112,8 +2178,7 @@
                                         <s xml:id="De_1_3_178d">und sie berichtet von der
                                              Versunkenheit der Hirten in den Glanz des Goldes und
                                              der Edelsteine, dass sie vergaßen an ihr Gelübde und
-                                             nicht merkten auf<milestone unit="61"/>
-                                             <fw type="pageNum">59</fw> die erhobenen Hände des
+                                             nicht merkten auf <fw type="pageNum">59</fw> die erhobenen Hände des
                                              Toten und ob der Herrlichkeiten der Schätze des Königs
                                              in der Grabeshöhle versäumten, die Erlösung des Königs
                                              und seines Volkes herbeizuführen.</s>
@@ -2148,7 +2213,6 @@
                                              </del>
                                              <add>n</add>
                                              <add>der Verbannung</add>
-                                             <milestone unit="62"/>
                                              <fw type="pageNum">60</fw> in die Heimat, sondern dass
                                              wir uns finden zu einem neuen Leben der Erfüllung und
                                              der Verwirklichung, das uns die Kraft gibt zu wirken
@@ -2181,8 +2245,7 @@
                                              Griechenlandes teilte und mündete in die Fährte durch
                                              die grünen Bergstraßen der alten Jonischen Reiche,
                                              vorbei an der Burg der Göttin Athene mit den Ruinen
-                                             ihrer weiten<milestone unit="63"/>
-                                             <fw type="pageNum">61</fw> Säulenhallen.</s>
+                                             ihrer weiten <fw type="pageNum">61</fw> Säulenhallen.</s>
                                         <s xml:id="De_1_3_186">"Eine unendliche Gedankenwelt hat von
                                              diesem kleinen Inselreiche seine Formung erhalten",
                                              sagte David zu seinem Bruder Ruben, als sie
@@ -2217,7 +2280,7 @@
                                    <pb xml:id="img_0064"/>
 
                                    <fw type="pageNum">62</fw>
-                                   <head type="chpater"> Die Ankunft!</head>
+                                   <head type="chapter"> Die Ankunft!</head>
                                    <lb/>
                                    <p>
                                         <s xml:id="De_1_4_001">Die Sonne steigt langsam aus dem
@@ -4856,7 +4919,7 @@
                                    <pb xml:id="img_0137"/>
                                    <head type="section">III. Erlösung</head>
                                    <fw type="pageNum">127</fw>
-                                   <head type="chpater">Die heilige Stadt</head>
+                                   <head type="chapter">Die heilige Stadt</head>
                                    <p>
                                         <s xml:id="De_3_1_001">Als die Gäste das Jugenddorf
                                              verlassen hatten, weilten Rachel und David an dem
@@ -6771,7 +6834,7 @@
                               <div type="chapter" xml:id="De_3_4">
                                    <pb xml:id="img_0189"/>
                                    <fw type="pageNum">179</fw>
-                                   <head type="chpater">Sand und Sterne</head>
+                                   <head type="chapter">Sand und Sterne</head>
                                    <p>
                                         <s xml:id="De_3_4_001">Die ersten Morgenstrahlen fallen auf
                                              die Abhänge des Gebirges Libanon, bestrahlen die Steine
@@ -7112,8 +7175,6 @@
                               <div type="chapter" xml:id="En_0_0">
                                    <head type="section">Introduction:</head>
                                    <pb xml:id="En_p2"/>
-                                   <milestone unit="92"/>
-
                                    <head type="chapter">The Land</head>
                                    <p xml:id="En_0001">
                                         <s xml:id="En_0_0_001">One land there is in this world which
@@ -7173,8 +7234,7 @@
                                              of the sun; and they find balm for all their earthly
                                              trials in the peace of their ancestral home.</s>
                                         <s xml:id="En_0_0_009">For thousands of years that land has
-                                             fructified the intellectual and <milestone unit="93"/>
-                                             <fw type="pageNum">2</fw> spiritual life of many
+                                             fructified the intellectual and <fw type="pageNum">2</fw> spiritual life of many
                                              peoples: By their prayers and their festival they have
                                              made it the home of their own spirit.<lb/>Through long
                                              ages the land lay solitary and forsaken, arid and
@@ -7311,8 +7371,7 @@
                                         <s xml:id="En_0_0_038">Northward from the sister-cities of
                                              Jaffa and Tel Aviv stretch green villages with orchards
                                              and poultry runs and market gardens, - villages in
-                                             whose midst lie embowered cube-shaped <milestone unit="95"/>
-                                             <fw type="pageNum">4</fw> white cottages within whose
+                                             whose midst lie embowered cube-shaped <fw type="pageNum">4</fw> white cottages within whose
                                              walls dwells a happy generation of sowers and
                                              reapers.</s>
                                         <lb/>
@@ -7363,7 +7422,6 @@
                               <div type="chapter" xml:id="En_1_1">
                                    <head type="section">Leavetaking</head>
                                    <lb/>
-                                   <milestone unit="96"/>
                                    <fw type="pageNum">5</fw>
                                    <pb xml:id="En_p3"/>
 
@@ -7432,8 +7490,7 @@
                                              a hostile land.</s>
                                         <s xml:id="En_1_1_018">But they would be comforted by
                                              reading from her lips the promise to send for them as
-                                             soon as she <milestone unit="97"/>
-                                             <fw type="pageNum">6</fw> could obtain permission from
+                                             soon as she <fw type="pageNum">6</fw> could obtain permission from
                                              the foreign power that ruled over the Land of
                                              Israel.</s>
                                         <lb/>
@@ -7491,7 +7548,6 @@
                                              the Land of Israel so that he might sow and reap in the
                                              fields of a Kevuzah.</s>
                                         <lb/>
-                                        <milestone unit="98"/>
                                         <fw type="pageNum">7</fw>
                                         <s xml:id="En_1_1_033">In silent meditation Rachel had
                                              stopped beside each bed, leaving a farewell caress when
@@ -7552,8 +7608,7 @@
                                              hand: Neve Shaanan, Haifa, Palestine.</s>
                                         <lb/>
                                         <s xml:id="En_1_1_044">The devoted committee of women<ref target="#note-Frauenbund" type="noteAnchor">*</ref> who had sponsored the Gray house from its
-                                             first day had done their utmost to equip the <milestone unit="99"/>
-                                             <fw type="pageNum">8</fw> youthful vanguard of their
+                                             first day had done their utmost to equip the <fw type="pageNum">8</fw> youthful vanguard of their
                                              people with the best of everything needful for their
                                              new life in the Land of Israel.</s>
                                         <s xml:id="En_1_1_045">For twelve years, ever since the
@@ -7613,7 +7668,6 @@
                                              indelible impress on his sensitive young soul.<ref target="#note-Psychoanalysis" type="noteAnchor">*</ref>
                                         </s>
                                         <lb/>
-                                        <milestone unit="100"/>
                                         <fw type="pageNum">9</fw>
                                         <s xml:id="En_1_1_056">Rachel walked beside him at the head
                                              of the procession, turning now and then to give slight
@@ -7675,7 +7729,6 @@
                                              young pioneers and the leaders who were to accompany
                                              them.</s>
                                         <lb/>
-                                        <milestone unit="101"/>
                                         <fw type="pageNum">10</fw>
                                         <s xml:id="En_1_1_070"> In their midst sat Beracha, the
                                              mother of the Gray House, and Leah, its guardian
@@ -7736,7 +7789,6 @@
                                              to the ideals that had once been his own, who were
                                              going up to the Land of Israel in his stead.</s>
                                         <lb/>
-                                        <milestone unit="102"/>
                                         <fw type="pageNum">11</fw>
                                         <s xml:id="En_1_1_086"> As he surveyed their young faces he
                                              recalled the long years when he had championed the
@@ -7797,8 +7849,7 @@
                                              possessions.</s>
                                         <s xml:id="En_1_1_095">On behalf of our unhappy community I
                                              bestore upon you, in parting, two symbols of our
-                                             people. In your <milestone unit="103"/>
-                                             <fw type="pageNum">12</fw> right hands I place the
+                                             people. In your <fw type="pageNum">12</fw> right hands I place the
                                              wanderer's staff which will guide you from the Exile to
                                              the eternal home of our people, and in your left I
                                              place the Bible, the Book which for thousands of years
@@ -7863,8 +7914,7 @@
                                              carrying out the unique plan of transferring thousands
                                              of Jewish children from the Exile to the Promised
                                              Land.</s>
-                                        <s xml:id="En_1_1_109">She holds out her <milestone unit="104"/>
-                                             <fw type="pageNum">13</fw> hands in token of her
+                                        <s xml:id="En_1_1_109">She holds out her <fw type="pageNum">13</fw> hands in token of her
                                              readiness to work with you, to give what only women can
                                              give to children. Together you and she will comfort
                                              these children when they long for the dear ones they
@@ -7928,7 +7978,6 @@
                                              to the children.</s>
                                         <s xml:id="En_1_1_119">Ruth herself, robed in a Moabite gown
                                              and carrying golden sheaves on her arm, had much to
-                                                  <milestone unit="105"/>
                                              <fw type="pageNum">14</fw> tell about the hospitality
                                              of the Israelitish folk toward strangers from other
                                              lands.</s>
@@ -7955,7 +8004,6 @@
                                              scattered to their dormitories.</s>
                                    </p>
                               </div>
-                              <milestone unit="106"/>
                               <fw type="pageNum">15</fw>
                               <div type="chapter" xml:id="En_1_2">
                                    <pb xml:id="En_p4"/>
@@ -8018,8 +8066,7 @@
                                              rewarded her.</s>
                                         <s xml:id="En_1_2_014">How splendidly these working folk<ref target="#note-workes" type="noteAnchor">*</ref>
                                              had held their own, by dint of incessant toil,
-                                             ingenuity, <milestone unit="107"/>
-                                             <fw type="pageNum">16</fw> and devotion to the public
+                                             ingenuity, <fw type="pageNum">16</fw> and devotion to the public
                                              good, through the violent vicissitudes of the post-war
                                              years.</s>
                                         <lb/>
@@ -8078,7 +8125,6 @@
                                              last restingplace <unclear>non </unclear>could drive
                                              them out.</s>
                                         <lb/>
-                                        <milestone unit="108"/>
                                         <fw type="pageNum">17</fw>
                                         <s xml:id="En_1_2_026">Green willows and arbor vitae grew
                                              luxuriantly in the well tended grove of the dead; ivy
@@ -8141,7 +8187,6 @@
                                              the song of "Sand and Stars" by a modern Jewish
                                              poet.</s>
                                    </p>
-                                   <milestone unit="109"/>
                                    <fw type="pageNum">18</fw>
                                    <l>The moon shines bright,</l>
                                    <l>The stars gleam white,</l>
@@ -8216,8 +8261,7 @@
                                              stars will show us the course we must steer, the work
                                              we must do, the plans we must make for our lives.</s>
                                         <s xml:id="En_1_2_066">Now that we are about to set out for
-                                             the Land of Israel, <milestone unit="110"/>
-                                             <fw type="pageNum">19</fw> they assure us that never
+                                             the Land of Israel, <fw type="pageNum">19</fw> they assure us that never
                                              again shall we be hunted from pillar to post. These
                                              very stars, mother, that shine down upon your grave
                                              here, will light us in our new life over there." </s>
@@ -8257,7 +8301,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_1_3">
-                                   <milestone unit="111"/>
                                    <fw type="pageNum">20</fw>
                                    <pb xml:id="En_p5"/>
                                    <head type="chapter"> Homeward Bound!</head>
@@ -8328,8 +8371,7 @@
                                              was Beracha, wearing a blue cloak with wide sleeves
                                              that fluttered like <supplied>pigeons</supplied> and a
                                              nurse's cap with a red Shield of David.</s>
-                                        <s xml:id="En_1_3_023">Her heart <milestone unit="112"/>
-                                             <fw type="pageNum">21</fw> was heavy as she embraced
+                                        <s xml:id="En_1_3_023">Her heart <fw type="pageNum">21</fw> was heavy as she embraced
                                              the little ones in farewell, for she would not be able
                                              to take Michael to school for the first time, or
                                              indulge Rena, who had just recovered from a long
@@ -8386,7 +8428,6 @@
                                         <s xml:id="En_1_3_040">This was the little city of Weimar,
                                              where Goethe had written his immortal "Faust," in which
                                              he urged his fellowmen to return to the land by the verses.<lb/>
-                                             <milestone unit="113"/>
                                         </s>
                                         <lg>
                                              <l>
@@ -8465,8 +8506,7 @@
                                              have been, owing to our long wanderings over the face
                                              of the globe, with so keen a desire for the land.
                                              Collective agricultural settlement in our Homeland
-                                             holds <milestone unit="114"/>
-                                             <fw type="pageNum">23</fw> out the only promise for our
+                                             holds <fw type="pageNum">23</fw> out the only promise for our
                                              future as a nation.</s>
                                         <s xml:id="En_1_3_049">That consummation alone - and no
                                              other - can save us at this time when our people is
@@ -8537,8 +8577,7 @@
                                              And when the early Zionist congresses<ref target="#note-congress" type="noteAnchor">*</ref>
                                              had assembled in Basle, great torches had been lit in
                                              front of the building as beacon lights to summon Jews
-                                             from all parts of the <milestone unit="115"/>
-                                             <fw type="pageNum">24</fw> globe. Delegates had come in
+                                             from all parts of the <fw type="pageNum">24</fw> globe. Delegates had come in
                                              their hundreds and thousands from many countries, and
                                              at each congress the plans for the restoration of the
                                              Land of Israel had taken on even more definite
@@ -8595,8 +8634,7 @@
                                              language was his mother-tongue, whose sweet songs he
                                              sang, and whose lovely women he admired. So closely has
                                              he identified himself with Italian culture and Italian
-                                             ways that he <milestone unit="116"/>
-                                             <fw type="pageNum">25</fw> had heard nothing about the
+                                             ways that he <fw type="pageNum">25</fw> had heard nothing about the
                                              great new movement that had released creative forces
                                              for the rebirth of his people and its ancient
                                              culture.</s>
@@ -8720,8 +8758,7 @@
                                              purpose in visiting the Land was to ascertain whether
                                              it had oil in commercial quantities, whether the
                                              chemicals of the Dead Sea were worth exploiting,
-                                             whether it would be worth while <milestone unit="118"/>
-                                             <fw type="pageNum">27</fw> to build a new port on the
+                                             whether it would be worth while <fw type="pageNum">27</fw> to build a new port on the
                                              red Sea.</s>
                                         <lb/>
                                         <s xml:id="En_1_3_125">Breaking into Ruth's reverie, he
@@ -8784,7 +8821,6 @@
                                              dissent.</s>
                                         <s xml:id="En_1_3_146">"I too am a son of your people," he
                                              told her. "I too love it with all its virtues and all
-                                                  <milestone unit="119"/>
                                              <fw type="pageNum">28</fw> its faults. I too should
                                              like to help it develop its powers freely as a nation
                                              in the society of nations.</s>
@@ -9003,7 +9039,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_1_4">
-                                   <milestone unit="123"/>
                                    <fw type="pageNum">32</fw>
                                    <pb xml:id="En_p6"/>
                                    <head type="chapter">The Homecoming</head>
@@ -9072,8 +9107,7 @@
                                              into a second motorboat in which already sat the port
                                              physician. Long years ago - ever since the day when her
                                              father, a rabbi in the distant Western Hemisphere, had
-                                             opened his home to refugees <milestone unit="124"/>
-                                             <fw type="pageNum">33</fw> from Eastern Europe - this
+                                             opened his home to refugees <fw type="pageNum">33</fw> from Eastern Europe - this
                                              unassuming woman had dedicated herself to the service
                                              of her people. The refugees' reports of the persecution
                                              they had suffered solely because they were Jews, their
@@ -9136,8 +9170,7 @@
                                              the Gray House might best be settled in the Land of
                                              Israel.</s>
                                         <s xml:id="En_1_4_041">Once again the scene in the Gray
-                                             house flashed before her <milestone unit="125"/>
-                                             <fw type="pageNum">34</fw> vision, once again she heard
+                                             house flashed before her <fw type="pageNum">34</fw> vision, once again she heard
                                              the words spoken by herself and the others.</s>
                                         <lb/>
                                         <s xml:id="En_1_4_043">All the spiritual forces that had
@@ -9197,7 +9230,6 @@
                                         <s xml:id="En_1_4_060">A warm current of happiness coursed
                                              through their veins; at last they were in the home from
                                              which they could never more be banished.<lb/>
-                                             <milestone unit="126"/>
                                              <fw type="pageNum">35</fw>
                                         </s>
                                         <s xml:id="En_1_4_062">Teachers and old friends from the
@@ -9258,7 +9290,6 @@
                                              joys of a parental home have hardly been known to you;
                                              all that is dearest to the heart of a child has been
                                              taken from you.<lb/>
-                                             <milestone unit="127"/>
                                              <fw type="pageNum">36</fw>
                                         </s>
                                         <s xml:id="En_1_4_080"> Your teachers and friends grieved at
@@ -9315,7 +9346,6 @@
                          <div type="section" n="2" xml:id="En_2">
                               <div type="chapter" xml:id="En_2_1">
                                    <head type="section">II.The Homeland</head>
-                                   <milestone unit="128"/>
                                    <fw type="pageNum">37</fw>
                                    <pb xml:id="En_p7"/>
 
@@ -9376,8 +9406,7 @@
                                         <s xml:id="En_2_1_017">All of us will know what each of us
                                              is doing, watching one another efforts to lay the
                                              foundation stones for the Homeland. Step by step we
-                                             shall follow each other's trials <milestone unit="129"/>
-                                             <fw type="pageNum">38</fw> and struggles, each other's
+                                             shall follow each other's trials <fw type="pageNum">38</fw> and struggles, each other's
                                              efforts to find a place in the new life of our
                                              Land.</s>
                                         <s xml:id="En_2_1_018">Each will be aware of the joys that
@@ -9443,8 +9472,7 @@
                                         <s xml:id="En_2_1_031">Like a lost atom without meaning or
                                              power or ties, our people time and again attempted to
                                              integrate itself into an alien world.</s>
-                                        <s xml:id="En_2_1_032">Here, in our tiny Homeland <milestone unit="130"/>
-                                             <fw type="pageNum">39</fw> we are aware of the laws of
+                                        <s xml:id="En_2_1_032">Here, in our tiny Homeland <fw type="pageNum">39</fw> we are aware of the laws of
                                              the stars, which will also determine our own course in
                                              harmony with the unique laws of our being." </s>
                                         <lb/>
@@ -9501,7 +9529,6 @@
                                              the Dead Sea - and whether we meet at work or at play,
                                              on excursions, or in the quiet of our Homes, or in the
                                              ancient holy city of our race, we shall always be aware
-                                                  <milestone unit="131"/>
                                              <fw type="pageNum">40</fw> that we must continue in the
                                              path in which we have now set our feet.</s>
                                         <s xml:id="En_2_1_051">Our course in life will be determined
@@ -9561,8 +9588,7 @@
                                              remain here to teach the children.</s>
                                         <s xml:id="En_2_1_067">It will be a red letter day for me
                                              when I come up from the plain to visit you or when you
-                                             will <milestone unit="132"/>
-                                             <fw type="pageNum">41</fw> come down to visit me. Hand
+                                             will <fw type="pageNum">41</fw> come down to visit me. Hand
                                              in hand we shall walk as in the days of our childhood,
                                              with ever deepening affection for each other. And then
                                              the day will come, I hope, when we two, united for
@@ -9599,7 +9625,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_2_2">
-                                   <milestone unit="133"/>
                                    <fw type="pageNum">42</fw>
                                    <pb xml:id="En_p8"/>
                                    <head type="chapter"> The Cooperative Settlement</head>
@@ -9660,7 +9685,6 @@
                                              pioneers who in the short span of two decades had
                                              transformed swamp lands into fertile fields. The first
                                              settlement on the road was Yagur, where lived
-                                                  <milestone unit="134"/>
                                              <fw type="pageNum">43</fw> hundreds of men and women
                                              who went out to work daily and developed a communal
                                              society with the proceeds of their own labor. Next came
@@ -9720,7 +9744,6 @@
                                              of old many armies had gathered and where revelation
                                              was granted to ancient Hebrew seers.</s>
                                    </p>
-                                   <milestone unit="135"/>
                                    <fw type="pageNum">44</fw>
                                    <p>
                                         <s xml:id="En_2_2_025"> The road passed alongside Nazareth,
@@ -9767,7 +9790,6 @@
                                              Ness, Akiba, Yohanan ben Zakkai, Maimonides. <ref target="#note-duplication" type="noteAnchor">*</ref>
                                         </s>
                                         <lb/>
-                                        <milestone unit="136"/>
                                         <fw type="pageNum">56</fw>
                                         <s>There, too, was the domed structure, the tomb of the
                                              venerable teacher Rabbi Meir baal ha Ness, to which
@@ -9818,7 +9840,6 @@
                                              a gift from some American friends, she was welcomed by
                                              a group of children.</s>
                                         <s xml:id="En_2_2_052">Standing on the roof of the
-                                                  <milestone unit="137"/>
                                              <fw type="pageNum">57</fw> school house Rachel surveyed
                                              the prosperous settlement, the blue lake, the old Roman
                                              town, snow-capped Mount Hermon, and the great white
@@ -9871,8 +9892,7 @@
                                              to adjust himself in our contemporary society, how to
                                              prepare himself for work in the settlement and for
                                              service to the larger community of our people, how to
-                                             school his energies for his daily <milestone unit="138"/>
-                                             <fw type="pageNum">58</fw> tasks so that his labors may
+                                             school his energies for his daily <fw type="pageNum">58</fw> tasks so that his labors may
                                              be productive. Our children must be taught to be
                                              socially minded and brave, neat and conscientious,
                                              industrious and well informed, so that they too may
@@ -9940,8 +9960,7 @@
                                              gateway, passing the Youth Aliyah dormitory and the
                                              school on the way to the community hall.</s>
                                         <s xml:id="En_2_2_082">Nurith was awaiting Rachel in a
-                                             lovely garden with <milestone unit="139"/>
-                                             <fw type="pageNum">59</fw> large grass plots, rare
+                                             lovely garden with <fw type="pageNum">59</fw> large grass plots, rare
                                              plants, and white benches set against green hedges.</s>
                                         <s xml:id="En_2_2_083">She made a charming picture in a blue
                                              working frock and a bright kerchief on her black
@@ -10006,8 +10025,7 @@
                                              to silvery-haired Henrietta, who was to lay it in the
                                              ground.</s>
                                         <s xml:id="En_2_2_099">The guests were then invited to
-                                             shovel earth <milestone unit="140"/>
-                                             <fw type="pageNum">60</fw> into the trench while the
+                                             shovel earth <fw type="pageNum">60</fw> into the trench while the
                                              children's choir sang their songs.</s>
                                         <s xml:id="En_2_2_100">After the ceremony all assembled in
                                              the large dining hall for a luncheon prepared from the
@@ -10066,8 +10084,7 @@
                                         <s xml:id="En_2_2_116">In a discussion our oldest group had
                                              last night they tried to find the answer to a question
                                              they had posed for themselves: Why is it, they asked,
-                                             that the <milestone unit="141"/>
-                                             <fw type="pageNum">61</fw> painters rendered Biblical
+                                             that the <fw type="pageNum">61</fw> painters rendered Biblical
                                              figures in the manner of their own day and their own
                                              countries? And how is it that each artist could give
                                              his own personal interpretation to the ideas and
@@ -10085,7 +10102,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_2_3">
-                                   <milestone unit="142"/>
                                    <pb xml:id="En_p9"/>
                                    <head type="chapter">The Feast Of The First Fruits<ref target="#note-shavuot" type="noteAnchor">*</ref></head>
                                    <lb/>
@@ -10153,8 +10169,7 @@
                                         <s xml:id="En_2_3_015">The procession was headed by the boys
                                              and girls from the children's villages of Meir Shefeye
                                              and Benshemen<ref target="#note-BenShemen" type="noteAnchor">*</ref>, carrying great trays of
-                                             tender green lettuce, white and red radishes,
-                                                  <milestone unit="143"/> peas, and cabbages, and
+                                             tender green lettuce, white and red radishes, peas, and cabbages, and
                                              leeks.</s>
                                         <s xml:id="En_2_3_016">In their midst trotted little Hayim
                                              of Benshemen, proudly carrying in his arms the first
@@ -10225,8 +10240,7 @@
                                                   brethren!' </s>
                                              <s xml:id="En_2_3_035">The flutist led them in music to
                                                   the mountain of the lord. Here the king, Agrippa
-                                                  himself, took a basket <milestone unit="144"/>
-                                                  <fw type="pageNum">64</fw> of first fruits on his
+                                                  himself, took a basket <fw type="pageNum">64</fw> of first fruits on his
                                                   shoulder and proceeded until the courtyard was
                                                   reached. Whereupon the priests burst into song: 'I
                                                   will extol thee, O Lord; for thou hast lifted me
@@ -10289,7 +10303,6 @@
                                              </lg>
                                         </quote>
                                         <lb/>
-                                        <milestone unit="145"/>
                                         <fw type="pageNum">65</fw>
                                         <s xml:id="En_2_3_054">From the midst of the dancers Ruth
                                              and David led out a group of children who carried
@@ -10349,8 +10362,7 @@
                                              picked up a spade and shovelled the first clods of
                                              earth upon the stone, giving thanks to the Creator of
                                              the world for having brought the Jewish people, after
-                                             thousands of years in Exile, <milestone unit="146"/>
-                                             <fw type="pageNum">66</fw> back to their own land and
+                                             thousands of years in Exile, <fw type="pageNum">66</fw> back to their own land and
                                              their own soil.</s>
                                         <lb/>
                                         <s xml:id="En_2_3_073">Ranged in single file, the children
@@ -10412,7 +10424,6 @@
                                              Ahawah village Beracha saw a symbol of the system of
                                              collective labor in the Land.</s>
                                         <lb/>
-                                        <milestone unit="147"/>
                                         <fw type="pageNum">67</fw>
                                         <s xml:id="En_2_3_088"> She went back to Neve Shaanan with
                                              her young brood, rejoicing in the thought that at the
@@ -10423,7 +10434,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_2_4">
-                                   <milestone unit="148"/>
                                    <fw type="pageNum">68</fw>
                                    <pb xml:id="En_p10"/>
                                    <head type="chapter">The Youth Rally</head>
@@ -10483,7 +10493,6 @@
                                              was not enough.</s>
                                         <s xml:id="En_2_4_019">Far more important was it to receive
                                              our ancient Hebrew culture, so that we might apply its
-                                                  <milestone unit="149"/>
                                              <fw type="pageNum">69</fw> teaching to our own
                                              problems.</s>
                                         <s xml:id="En_2_4_020">We had to work out a new form of
@@ -10540,7 +10549,6 @@
                                         <s xml:id="En_2_4_037">The next instant she hurried forward
                                              to meet him, and they went hand in hand to their seats
                                              at the lower end of the table.<lb/>
-                                             <milestone unit="150"/>
                                              <fw type="pageNum">70</fw> Around the Sabbath board
                                              were gathered a thousand boys and girls who were
                                              bronzed by the warm southern sun, supple from work in
@@ -10602,8 +10610,7 @@
                                         <s xml:id="En_2_4_051">The young people were ranged on the
                                              stone benches of the open air theatre beside teachers,
                                              laborers, officials, relatives, friends of Benshemen
-                                             village, and guests from the neighbouring <milestone unit="151"/>
-                                             <fw type="pageNum">71</fw> Arab villages.</s>
+                                             village, and guests from the neighbouring <fw type="pageNum">71</fw> Arab villages.</s>
                                         <s xml:id="En_2_4_052">The stage has been built in the
                                              centre of a circular plot against a dark background of
                                              trees.</s>
@@ -10655,7 +10662,6 @@
                                              national values all the more through the vicarious
                                              experience of dramatic performance.</s>
                                         <lb/>
-                                        <milestone unit="152"/>
                                         <fw type="pageNum">72</fw>
                                         <s xml:id="En_2_4_063a">After the play, the children
                                              gathered around their leaders to discuss the problems
@@ -10723,7 +10729,6 @@
                                              according to his knowledge and ability. <ref target="#note-missingpage" type="noteAnchor">*</ref>
                                         </s>
                                         <lb/>
-                                        <milestone unit="153"/>
                                         <fw type="pageNum">73</fw>
                                         <s xml:id="En_2_4_100">In each of his sons Jacob saw a
                                              continuation of his own life, and in their lives he
@@ -10777,8 +10782,7 @@
                                         <s xml:id="En_2_4_113">Freely and of our own choice we must
                                              grapple with every task we perform in the Homeland,
                                              even as Jacob grappled with the angel, saying, 'I will
-                                             not let thee go except thou bless me!' <milestone unit="154"/>
-                                             <fw type="pageNum">74</fw> "You are right, Reuben,"
+                                             not let thee go except thou bless me!' <fw type="pageNum">74</fw> "You are right, Reuben,"
                                              interposed demure Deborah of Benshemen, "in demanding
                                              that each of us decide for himself what place he can
                                              best fill in the community. Yet the legend of Jacob's
@@ -10831,8 +10835,7 @@
                                         <s xml:id="En_2_4_122">They have not favorites, but cherish
                                              them all, - the young pines with their shining cones,
                                              the broad-leaved fig trees, the low, fenlike palms, the
-                                             feathery- <milestone unit="155"/>
-                                             <fw type="pageNum">75</fw> leaved eucalyptus, the
+                                             feathery- <fw type="pageNum">75</fw> leaved eucalyptus, the
                                              orange trees with their <!--<choice>
                                                   <sic>withe</sic>
                                                   <corr>-->white<!--</corr>
@@ -10890,8 +10893,7 @@
                                                   <corr>-->with<!--</corr>
                                              </choice>-->
                                              a stable community can be established firmly only on a
-                                             foundation of justice <milestone unit="156"/>
-                                             <fw type="pageNum">76</fw> with every member of the
+                                             foundation of justice <fw type="pageNum">76</fw> with every member of the
                                              community having equal rights to life and freedom and
                                              happiness.</s>
                                         <s xml:id="En_2_4_137">In that way, alone, and in no other,
@@ -10947,8 +10949,7 @@
                                              settlements do see a just social order in our little
                                              communities. But the trend in the cities and the
                                              private villages causes us much anxiety.</s>
-                                        <s xml:id="En_2_4_152">There we see no <milestone unit="157"/>
-                                             <fw type="pageNum">77</fw> striving toward national
+                                        <s xml:id="En_2_4_152">There we see no <fw type="pageNum">77</fw> striving toward national
                                              unity in our language, our press, or our literature.
                                              There we see no single goal or common method for the
                                              education of our children.</s>
@@ -11009,7 +11010,6 @@
                                         <s xml:id="En_2_4_168">Your demand for justice in our new
                                              community can be satisfied in one way, and in one way
                                              only: We must put soul into our work. Our task must not
-                                                  <milestone unit="158"/>
                                              <fw type="pageNum">78</fw> be performed in the spirit
                                              of the slave labor of the factories abroad. We must
                                              love our work for its own sake, for the sake of service
@@ -11065,8 +11065,7 @@
                                              best.</s>
                                         <s xml:id="En_2_4_180">At our invitation friends have come
                                              from all over the Land to take part in the closing
-                                             exercises of our Youth <milestone unit="159"/>
-                                             <fw type="pageNum">79</fw> Rally.</s>
+                                             exercises of our Youth <fw type="pageNum">79</fw> Rally.</s>
                                         <s xml:id="En_2_4_181">This afternoon we welcome Arab
                                              friends from neighboring villages, Persian and
                                              Yemenites, Russians and Poles, Norwegians and Swiss,
@@ -11129,7 +11128,6 @@
                          <div type="section" n="3" xml:id="En_3">
                               <div type="chapter" xml:id="En_3_1">
                                    <head type="section">III.Redemption</head>
-                                   <milestone unit="160"/>
                                    <fw type="pageNum">80</fw>
                                    <pb xml:id="En_p11"/>
 
@@ -11197,7 +11195,6 @@
                                         <s xml:id="En_3_1_015">There, for the first time, my
                                              longings were fully satisfied, for I saw that longings
                                              could be transformed into realities in the midst of our
-                                                  <milestone unit="161"/>
                                              <fw type="pageNum">81</fw> people on the Homeland
                                              soil.</s>
                                         <s xml:id="En_3_1_016">Yet - yet the time has not come for
@@ -11253,7 +11250,6 @@
                                              our new home together, just when our first child is
                                              growing under your heart. Yet your resolve is too lofty
                                              and your love for our people too deep for me to
-                                                  <milestone unit="162"/>
                                              <fw type="pageNum">82</fw> discuss you."</s>
                                         <s xml:id="En_3_1_033"> David and Rachel left the children's
                                              village together early in the next morning.</s>
@@ -11315,8 +11311,7 @@
                                              where the ploughs turned up the earth in deep
                                              furrows.</s>
                                         <s xml:id="En_3_1_051">All along the road pedestrians were
-                                             seen: <milestone unit="163"/>
-                                             <fw type="pageNum">83</fw> Arabs in picturesque
+                                             seen: <fw type="pageNum">83</fw> Arabs in picturesque
                                              costumes striding along with free and dignified steps,
                                              peasant women bearing great trays of fruit on their
                                              heads; shepherds driving flocks of sheep and goats
@@ -11382,8 +11377,7 @@
                                              </choice>-->
                                              in its upbuilding.</s>
                                         <s xml:id="En_3_1_070">In these momentous days it is less
-                                             than ever <milestone unit="164"/>
-                                             <fw type="pageNum">84</fw> permitted us to follow our
+                                             than ever <fw type="pageNum">84</fw> permitted us to follow our
                                              personal desires: for we must be prepared to go
                                              wherever the needs of our people call us.</s>
                                         <s xml:id="En_3_1_071">May you succeed and prosper in all
@@ -11441,8 +11435,7 @@
                                              bright cloaks led their heavily laden asses with loud
                                              shouts through narrow lanes pervaded with the odor of
                                              fresh spices. In the immaculately clean shops, meat and
-                                             bread, fruit and spices, <milestone unit="165"/>
-                                             <fw type="pageNum">85</fw> clothing and shoes, rugs and
+                                             bread, fruit and spices, <fw type="pageNum">85</fw> clothing and shoes, rugs and
                                              jewelry were heaped up in lavish profusion to attract
                                              the passing multitude.</s>
                                         <lb/>
@@ -11511,8 +11504,7 @@
                                         <lb/>
                                         <s xml:id="En_3_1_105">Not a ray of light pentrated into the
                                              cell-like room.</s>
-                                        <s xml:id="En_3_1_106">The <milestone unit="166"/>
-                                             <fw type="pageNum">86</fw> The sick woman moaned with
+                                        <s xml:id="En_3_1_106">The <fw type="pageNum">86</fw> The sick woman moaned with
                                              thirst, <!--<choice>
                                                   <corr>-->there<!--</corr>
                                                   <sic>their </sic>
@@ -11592,7 +11584,6 @@
                                         <s xml:id="En_3_1_133">I shall report the incident at once.
                                              Perhaps something will be done after this."</s>
                                         <s xml:id="En_3_1_135">
-                                             <milestone unit="167"/>
                                              <fw type="pageNum">87</fw> Their next visit was to a
                                              tiny dark room, where an old man of seventy lay on the
                                              floor.</s>
@@ -11667,7 +11658,6 @@
                                              city I had but a single aim: to learn modern methods of
                                              social service so that I might join my friend Gad in a
                                              children's village. But now I know that my fate
-                                                  <milestone unit="168"/>
                                              <fw type="pageNum">88</fw> binds me to Jerusalem, which
                                              cherishes in ancient <!--<choice>
                                                   <corr>-->shrines<!--</corr>
@@ -11731,7 +11721,6 @@
                                              just as those shadows yonder lose themselves in the
                                              hills, only to arise from the hills once more.</s>
                                         <s xml:id="En_3_1_167">It is thus, my Rachel, that I
-                                                  <milestone unit="169"/>
                                              <fw type="pageNum">89</fw> understand your resolve to
                                              go to our distant brethren, to bear their sorrows as
                                              your own, to become one with them in their sufferings
@@ -11745,9 +11734,8 @@
                               </div>
                               <div type="chapter" xml:id="En_3_2">
                                    <pb xml:id="En_p12"/>
-                                   <milestone unit="170"/>
                                    <fw type="pageNum">90</fw>
-                                   <head type="chpater">(*title missing)<ref/>
+                                   <head type="chapter">(*title missing)<ref/>
                                    </head>
                                    <p>
                                         <s xml:id="En_3_2_001"> Night had fallen when Rachel boarded
@@ -11814,8 +11802,7 @@
                                              assembled for their supper.</s>
                                         <s xml:id="En_3_2_021">There were but few of them because
                                              expenditure for foreign travel was looked upon with
-                                             disfavour in the Homeland, and, above <milestone unit="171"/>
-                                             <fw type="pageNum">91</fw> all, because they were
+                                             disfavour in the Homeland, and, above <fw type="pageNum">91</fw> all, because they were
                                              needed at home to plough the fields and to bear the
                                              weapons of defense.</s>
                                         <s xml:id="En_3_2_022">The ship slowly furrowed her way
@@ -11875,8 +11862,7 @@
                                         <s xml:id="En_3_2_037">Its two hundred and fifty souls were
                                              completely cut off from the world, and so crowded
                                              together that they could neither work nor relax, but
-                                             lay on the deck in a <milestone unit="172"/>
-                                             <fw type="pageNum">92</fw> confused heap like so many
+                                             lay on the deck in a <fw type="pageNum">92</fw> confused heap like so many
                                              animals.</s>
                                         <s xml:id="En_3_2_039">There was little food on board; and
                                              when small boats occasionally brought supplies the poor
@@ -11944,8 +11930,7 @@
                                         <s xml:id="En_3_2_066"> The passengers from the Danube cargo
                                              boat where the last to come on board.</s>
                                         <s xml:id="En_3_2_067"> Their escort assigned each<add>
-                                                  a</add> place in the groups which stood <milestone unit="173"/>
-                                             <fw type="pageNum">93</fw> rigidly marshalled on deck,
+                                                  a</add> place in the groups which stood <fw type="pageNum">93</fw> rigidly marshalled on deck,
                                              and then showed them their quarters.</s>
                                         <lb/>
                                         <s xml:id="En_3_2_068">For the women and children beds had
@@ -12018,7 +12003,6 @@
                                              and fleeing on.</s>
                                         <lb/>
                                         <s xml:id="En_3_2_084">
-                                             <milestone unit="174"/>
                                              <fw type="pageNum">94</fw> Rachel did her best to
                                              befriend and encourage them all, telling them about
                                              conditions in the Homeland and what prospects it might
@@ -12080,8 +12064,7 @@
                                         <s xml:id="En_3_2_109">Just before I left my mother braided
                                              a foreign banknote into my long and heavy hair. With
                                              this money I paid my way to the Russian port where the
-                                             refugees <milestone unit="175"/>
-                                             <fw type="pageNum">95</fw> were to meet.</s>
+                                             refugees <fw type="pageNum">95</fw> were to meet.</s>
                                         <s xml:id="En_3_2_110">The journey took many months, and in
                                              the meantime I learned that I should not enter to the
                                              Land of Israel alone, for I bore with me the fruit of
@@ -12147,7 +12130,6 @@
                                              there, or that one could study and work there as in
                                              Rumania.</s>
                                         <s xml:id="En_3_2_137">But I joined the group, and a
-                                                  <milestone unit="176"/>
                                              <fw type="pageNum">96</fw> wealthy coreligionist paid
                                              my passage.</s>
                                         <s xml:id="En_3_2_138">I know that life will be hard over
@@ -12212,8 +12194,7 @@
                                         <s xml:id="En_3_2_165"> Suddenly, however, he espied a
                                              Jewish village and came as close inshore as he
                                              dared.</s>
-                                        <s xml:id="En_3_2_167">That night <milestone unit="177"/>
-                                             <fw type="pageNum">97</fw> was very dark and there were
+                                        <s xml:id="En_3_2_167">That night <fw type="pageNum">97</fw> was very dark and there were
                                              no lights to be seen anywhere.</s>
                                         <s xml:id="En_3_2_169">Rachel joined several men in
                                              supervising the descent from the ship and the swim to
@@ -12281,8 +12262,7 @@
                                              mother's strength would be built up again. </s>
                                         <s xml:id="En_3_2_194b">The boy Dan she suggested to be sent
                                              to the trade school in the Emek so that he might be
-                                             trained for work in a <milestone unit="178"/>
-                                             <fw type="pageNum">98</fw> settlement. </s>
+                                             trained for work in a <fw type="pageNum">98</fw> settlement. </s>
                                         <s xml:id="En_3_2_194c">The old professor who carried his
                                              books with him was to be taken to the home of his
                                              friend, a professor of philology in the university on
@@ -12315,7 +12295,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_3_3">
-                                   <milestone unit="179"/>
                                    <fw type="pageNum">99</fw>
                                    <pb xml:id="En_p13"/>
                                    <head type="chapter">Settlement!<ref target="#note-Hanita" type="noteAnchor">*</ref></head>
@@ -12379,8 +12358,7 @@
                                              their friends had toiled for many weeks to prepare the
                                              planks and the stones, the fences and the wire, the
                                              tentcloths and the ploughs.<lb/> The plans had been
-                                             worked out to the last detail, with the site <milestone unit="180"/>
-                                             <fw type="pageNum">100</fw> fixed and all tasks
+                                             worked out to the last detail, with the site <fw type="pageNum">100</fw> fixed and all tasks
                                              assigned.</s>
                                         <s xml:id="En_3_3_016"> Every one of those hundreds of
                                              workers knew precisely what he or she had to do.</s>
@@ -12440,7 +12418,6 @@
                                              be on the lookout night and day so that no harm may
                                              come to our children and our homesteads."</s>
                                         <s xml:id="En_3_3_035">
-                                             <milestone unit="181"/>
                                              <fw type="pageNum">101</fw> The procession came to a
                                              sudden halt.</s>
                                         <s xml:id="En_3_3_036">The leaders had already reached the
@@ -12515,7 +12492,6 @@
                                         <s xml:id="En_3_3_059">Just on the stroke of noon Asher
                                              stopped his motorcycle in front of his home.</s>
                                         <s xml:id="En_3_3_060">
-                                             <milestone unit="182"/>
                                              <fw type="pageNum">102</fw> Yocheved<ref target="#note-Jochebet" type="noteAnchor">*</ref>,
                                              who had waited anxiously for David for many hours, led
                                              him to Rachel's bedside.</s>
@@ -12580,8 +12556,7 @@
                                              little one's first bath, Ruth suddenly noticed Davids
                                              upraised hands, held out toward her dying
                                              sister.<lb/>And Ruth knew then that the two she loved
-                                             best in all the world <milestone unit="183"/>
-                                             <fw type="pageNum">123</fw> had given their lives for
+                                             best in all the world <fw type="pageNum">123</fw> had given their lives for
                                              the Homeland, that David, her childhood friend, had
                                              lost his beloved wife and devoted brother in the first
                                              hour of their consummated hopes.</s>
@@ -12630,7 +12605,6 @@
                                    </p>
                               </div>
                               <div type="chapter" xml:id="En_3_4">
-                                   <milestone unit="184"/>
                                    <fw type="pageNum">104</fw>
                                    <pb xml:id="En_p14"/>
                                    <head type="chapter">Sand and Stars</head>
@@ -12692,8 +12666,7 @@
                                              thought that he had been privileged to sow the fields
                                              of the Homeland, with his own hands to restore their
                                              fertility.</s>
-                                        <s xml:id="En_3_4_013">Into <milestone unit="185"/>
-                                             <fw type="pageNum">105</fw> the furrows he would cast
+                                        <s xml:id="En_3_4_013">Into <fw type="pageNum">105</fw> the furrows he would cast
                                              seed mingled with sand from his mother's grave in the
                                              distant north.</s>
                                         <s xml:id="En_3_4_014">With a slow and rhythmical stride he
@@ -12750,8 +12723,7 @@
                                              his people.</s>
                                         <lb/>
                                         <s xml:id="En_3_4_025">One by one he reviewed the memorable
-                                             days in the progress of <milestone unit="186"/>
-                                             <fw type="pageNum">106</fw> the settlement during its
+                                             days in the progress of <fw type="pageNum">106</fw> the settlement during its
                                              first year. There was the day when the heavy packing
                                              cases with gifts of books had been received from
                                              friends in Jerusalem, and the books had been arranged
@@ -12798,8 +12770,7 @@
                                              first seven fruit trees in Hanita. Next in the stream
                                              of David's crowding recollections came the day when the
                                              searchlight had been placed on the watch-tower so that
-                                             the approach <milestone unit="187"/>
-                                             <fw type="pageNum">107</fw> of hostile bands might be
+                                             the approach <fw type="pageNum">107</fw> of hostile bands might be
                                              detected from afar. Another memorable day had been that
                                              of which the first cultural committee of Hanita was
                                              elected, and the aged leader, Ussischkin, had sat down
@@ -12856,8 +12827,7 @@
                                              yesterday, so clearly did he remember all that had
                                              happened, that Ruth gave birth to her child in the
                                              little infirmary of Hanita, and his dead brother's
-                                             bright eyes had looked out at <milestone unit="188"/>
-                                             <fw type="pageNum">108</fw> him from the face of his
+                                             bright eyes had looked out at <fw type="pageNum">108</fw> him from the face of his
                                              tiny Gideon.</s>
                                         <lb/>
                                         <s xml:id="En_3_4_038">As David stood gazing out over the
@@ -12916,7 +12886,6 @@
                                              labor on the soil of the Homeland. In our children we
                                              see a symbol of the happiness of our people in
                                              returning to its little home after wandering so long
-                                                  <milestone unit="189"/>
                                              <fw type="pageNum">109</fw> in the wide world. These
                                              stars in their courses have guided us to our new
                                              beginnings."</s>
@@ -12935,7 +12904,7 @@
 
                <text xml:id="He" type="Hebrew-Translation">
                     <body>
-                         <div xml:id="Heb_0" type="introdcution">
+                         <div xml:id="Heb_0" type="introduction">
                               <div type="chapter" xml:id="Heb_0_0">
                                    <pb xml:id="Heb_p2"/>
                                    <head type="chapter">חול וכוכבים</head>
@@ -12954,7 +12923,6 @@
                                         <l> כי עת ומועד הם לכל.</l>
                                         <bibl> פרוג<ref target="#note-Frug" type="noteAnchor">*</ref>. </bibl>
                                    </epigraph>
-                                   <milestone unit="3"/>
                                    <fw type="pageNum">1</fw>
 
                                    <head type="section">הקדמה</head>
@@ -13022,8 +12990,7 @@
                                              נימי נפשו כל ימי היותו בגולה.</s>
                                         <s xml:id="He_0_0_015">בכל חלקי תבל יקוו בני עם זה לשובם אל
                                              ארצם. </s>
-                                        <s xml:id="He_0_0_016"> לא יוכלו לקשור <milestone unit="4"/>
-                                             <fw type="pageNum">2</fw> נפשם בארץ אחרת ושם לא
+                                        <s xml:id="He_0_0_016"> לא יוכלו לקשור <fw type="pageNum">2</fw> נפשם בארץ אחרת ושם לא
                                              ירגיעו.</s>
                                         <s xml:id="He_0_0_017">בכל דרכי תבל ישוטטו, אך תקותם האדירה
                                              תלחש להם, כי באחרית הימים תביאם דרכם אל ארץ אבותם.</s>
@@ -13094,7 +13061,6 @@
                                              גבעתה, עיר ערביים לובשי גלימות וסודרים מתנפנפים.</s>
                                         <lb/>
                                         <s xml:id="He_0_0_038">
-                                             <milestone unit="5"/>
                                              <fw type="pageNum">3</fw> מצפון לשתי הערים יפו ותל אביב
                                              האחיות משתרעות מושבות מוריקות על גני פרין לולי עופותיהן
                                              וגני ירקותיהן ובתוכן משובצים בתים-קוביות מלבינים. בהן
@@ -13133,7 +13099,6 @@
                               <div xml:id="Heb_1_1" type="chapter">
                                    <head type="section">1. העליה</head>
                                    <lb/>
-                                   <milestone unit="6"/>
                                    <fw type="pageNum">4</fw>
                                    <pb xml:id="Heb_p3"/>
                                    <head type="chapter">הבית האפור<ref target="#note-Auguststrasse" type="noteAnchor">*</ref>
@@ -13202,7 +13167,6 @@
                                              ישראל.</s>
                                         <lb/>
                                         <s xml:id="He_1_1_022">
-                                             <milestone unit="7"/>
                                              <fw type="pageNum">5</fw> הנערה עצמה כתרזה זקופה בזיו
                                              אביבה חלמה תמיד על עבודה במשתלה בעמק הגדול, בעמק
                                              יזרעאל, על טיפול בשתילים בארץ לא נטועה, על סעד
@@ -13278,7 +13242,6 @@
                                         <l>"אנו עולים ארצה לבנות ולהבנות בה".<ref target="#note-note5" type="noteAnchor">*</ref>
                                         </l>
                                    </lg>
-                                   <milestone unit="8"/>
                                    <fw type="pageNum">6</fw>
                                    <p>
                                         <s xml:id="He_1_1_038"> ורחל פוסעת ונכנסת אל מחסן הבגדים אשר
@@ -13346,8 +13309,7 @@
                                              המציק ומעמל הדרך לא עצרה כוח ותגוע.</s>
                                         <s xml:id="He_1_1_055">בלבו הרך של הנער דוד נחרתו ללא הימחות
                                              זכרונות האימים בעיר אבותיו במזרח אירופה, זכרונות חרדתם
-                                             הוריו לבניהם בהיגלות <milestone unit="9"/>
-                                             <fw type="pageNum">7</fw> סכנת הכליון בידי עדת
+                                             הוריו לבניהם בהיגלות <fw type="pageNum">7</fw> סכנת הכליון בידי עדת
                                                   המרצחים.<ref target="#note-Psychoanalysis" type="noteAnchor">*</ref>
                                         </s>
                                         <lb/>
@@ -13416,8 +13378,7 @@
                                              כיתומים עזובים לבית זה בזמן שאחרים בעיר המיליונים
                                              שבצפון לא שתו לבם עליהם.</s>
                                         <s xml:id="He_1_1_076">הוא אשר הכינם אל היום בו יעלו לראשונה
-                                             בבית אלהים לתורה <milestone unit="10"/>
-                                             <fw type="pageNum">8</fw> לתורה להשמיע את דברי קדשה
+                                             בבית אלהים לתורה <fw type="pageNum">8</fw> לתורה להשמיע את דברי קדשה
                                              באזני הקהל ביום בואם בברית.</s>
                                         <s xml:id="He_1_1_077"> הוא אשר נחם את היתומים ביום הזכרת
                                              הנשמות בבכותם את הוריהם אשר נספו במלחמות עמים זרים בכל
@@ -13487,7 +13448,7 @@
                                         </s>
                                         <lb/>
                                         <s xml:id="He_1_1_093"> יוצאים אתם במתי מעט, חמשים נערים
-                                             ונערות צעירים מבני עמנו ופעלכם יראה <milestone unit="11"/> —9 על האדמה המצפה לגאלתה.</s>
+                                             ונערות צעירים מבני עמנו ופעלכם יראה —9 על האדמה המצפה לגאלתה.</s>
                                         <s xml:id="He_1_1_094">בעמל וביגיע כפים תזרעו ותקצרו , תפלחו
                                              ותשדדו, תבנו ותכוננו, תלמדו ותיצרו. את כוח עלומיכם ואת
                                              שאיפת עמנו אל מולדת האבות תביאו; לא אוצרות לכם, ולא
@@ -13559,7 +13520,6 @@
                                              הילדים ומגרונם פרץ כסיום למסיבתם מזמור משורר עמם, משורר
                                              התהלים הקדמון:</s>
                                    </p>
-                                   <milestone unit="12"/>
                                    <fw type="pageNum">10</fw>
                                    <quote>
                                         <l>"בשוב יי את שיבת ציון היינו כחולמים,</l>
@@ -13607,7 +13567,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_1_2" type="chapter">
-                                   <milestone unit="13"/>
                                    <fw type="pageNum">11</fw>
                                    <pb xml:id="Heb_p4"/>
                                    <head type="chapter"> חול<lb/>
@@ -13676,7 +13635,6 @@
                                              אשר לסתו הגווע.</s>
                                         <s xml:id="He_1_2_019">הם עברו על יד אולם האבלים אשר בו
                                              תתכנס העדה לעצרת אשכבה.<lb/>
-                                             <milestone unit="14"/>
                                              <fw type="pageNum">12</fw> רק לפני שבועות מספר לקחו גם
                                              הם חלק בהלווית חברם רולף אשר נפשו העדינה נלאתה שאת חיי
                                              חרפה ובוז ויפרוש דומם מן החיים.</s>
@@ -13736,8 +13694,7 @@
                                         <s xml:id="He_1_2_035">הם העלו על לבם את זכר אמם הצנועה אשר
                                              הטילה על שכמה את כובד גורלה בעמל כפיה וברחמי לבה, אשר
                                              טרחה ודאגה להם ואשר לא זכתה לראות במו עיניה את גאולת
-                                             בניה בהצטרפם אל תנועת <milestone unit="15"/>
-                                             <fw type="pageNum">13</fw> תחית עמם ואת שיבתם לארץ
+                                             בניה בהצטרפם אל תנועת <fw type="pageNum">13</fw> תחית עמם ואת שיבתם לארץ
                                                   ישראל<ref target="#note-Sacrifice" type="noteAnchor">*</ref>.</s>
                                         <lb/>
                                         <s xml:id="He_1_2_036"> ומעל פני שדה הקברות החרישי נצנצו
@@ -13781,7 +13738,6 @@
                                         <l> לבוז לעמים גאיונים,</l>
                                         <l> אך הכוכבים, כוכבי אור, כוכבי זהר,</l>
                                         <l> כוכבי השמים, אים, אלהים?!“<ref target="#note-Frug" type="noteAnchor">*</ref></l>
-                                        <milestone unit="16"/>
                                         <fw type="pageNum">14</fw>
                                         <s xml:id="He_1_2_054">
                                              <lb/>וקולות האחים חברו בחשאי אל קול החליל, </s>
@@ -13844,7 +13800,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_1_3" type="chapter">
-                                   <milestone unit="17"/>
                                    <fw type="pageNum">15</fw>
                                    <pb xml:id="Heb_p5"/>
                                    <head type="chapter">יציאה</head>
@@ -13909,8 +13864,7 @@
                                              מביניהם והעוזרים טוענים את הכבודה ונפרדים מרעיהם.</s>
                                         <s xml:id="He_1_3_020">נפשם יודעת מאד כי פרק חשוב נפתח
                                              בחייהם, כי יוצאים הם מדכאון וחרפה אל עולם אחר, אל ים
-                                             התכלת אשר ישמש להם נתיבה אל <milestone unit="18"/>
-                                             <fw type="pageNum">16</fw> מולדתם.</s>
+                                             התכלת אשר ישמש להם נתיבה אל <fw type="pageNum">16</fw> מולדתם.</s>
                                         <s xml:id="He_1_3_021">נוקב וחריף כאב ההנתקות מרעי
                                              הילדות.</s>
                                         <s xml:id="He_1_3_022">המנהלת ברכה יוצאת לאחרונה לבושה מעיל
@@ -13974,7 +13928,6 @@
                                              לבני האדם את דרך שיבתם אל הקרקע, להכות שרש ברגבי האדמה
                                              מתוך עמל כפים.</s>
                                         <s xml:id="He_1_3_041">רות עומדת אחוזת הרהורים על יד חיים
-                                                  <milestone unit="19"/>
                                              <fw type="pageNum">17</fw> מורה הצעיר לפני החלונות
                                              הרחבים שלמבוא.</s>
                                         <s xml:id="He_1_3_042">"מה מוזר!" — אומרת היא אליו — "לפני
@@ -14047,7 +14000,6 @@
                                                   <l>ופה תמצית חכמה עד תם: </l>
                                                   <l>לחפש ולחיים ראוי רק גבר </l>
                                                   <l>עליו הוטל כבשם יום יום.</l>
-                                                  <milestone unit="20"/>
                                                   <fw type="pageNum">18</fw>
                                                   <l> אדם ובעיר קרקע זו מחודשת </l>
                                                   <l>יחדו ינוו, יינקו שפעת הטל, </l>
@@ -14121,7 +14073,6 @@
                                         <s xml:id="He_1_3_069"> "אכן" השיב דוד— "נס ההתגשמות אשר
                                              מוצאו רובב אלינו בזה יובהר לנו בכל עמקו אם נעלה
                                              בזכרוננו את מקורו; אך גם תולדותיו של העם החפשי
-                                                  <milestone unit="21"/>
                                              <fw type="pageNum">19</fw> הקטן יושב הארץ הזאת משיחות
                                              לנו הרבה, עם קטן זה אשר נלחם לפני שש מאות שנה את מלחמת
                                              שחרור ארצו ואשר נתכנס באותו לילה בהריו ונתלכד בשבועתו: </s>
@@ -14191,7 +14142,6 @@
                                              לנבוכים ולגולים, למושפלים ולנדחים, המתעוררים במולדת
                                              לחיי עמם החדשים. לבסוף הוא משמיע בחלילו את שיר העמק,
                                              עמק העבודה, עמק הזרע והקציר: </s>
-                                        <milestone unit="22"/>
                                         <fw type="pageNum">20</fw>
                                         <quote>
                                              <l> ים דגן מתנועע:</l>
@@ -14259,7 +14209,6 @@
                                              בנפשו, כי עיניו נשואות אל ידידיו הצעירים ונפשו תצא
                                              לראותם בהפליגם.</s>
                                         <s xml:id="He_1_3_113">עיניו השחורות תרות אחרי הילדים
-                                                  <milestone unit="23"/>
                                              <fw type="pageNum">21</fw> בעלותם. הן עוקבות אחריהם על
                                              גבי הספינה המלבינה. מבטו הבוחן יגלה את ראובן ואת רות
                                              ולבסוף יראה את דוד ואת רעיתו הצעירה רחל בעלותם על ספון
@@ -14328,8 +14277,7 @@
                                         <s xml:id="He_1_3_134"> ופרי עבודתך ישולם לך ביד רחבה, כי
                                              תקחי חלק בכל השור הנאצל על ידי הקשר אל משק העולם.</s>
                                         <s xml:id="He_1_3_135">דרוש לי אדם אשר יתמכו בכל לבו אל
-                                             בעיות מפעלי, <milestone unit="24"/>
-                                             <fw type="pageNum">22</fw> אשר יתמכני בעבודתי יום יום,
+                                             בעיות מפעלי, <fw type="pageNum">22</fw> אשר יתמכני בעבודתי יום יום,
                                              אשר יביא לתכניותי ויגשימן, אשר יחיה את חיי פעלי." </s>
                                         <s xml:id="He_1_3_136">דומם תניע רות את ראשה.</s>
                                         <s xml:id="He_1_3_137">"אודך על האמון אשר תרחש לי, אך החיים
@@ -14402,8 +14350,7 @@
                                              במחסור וביסורים. לא ממון ולא קשרי ידידות, לא קרבה
                                              לשליטים ולא השפעת הון יוכלו לשחררו מצינוק, כי עריציו
                                              הגבירו את כוח אויבי עמו בעזרת אוצרות אביו.</s>
-                                        <s xml:id="He_1_3_164">גם אתה, בן עמי, אדיר אתה <milestone unit="25"/>
-                                             <fw type="pageNum">23</fw> במשק העולם ויש לאל ידך לעשות
+                                        <s xml:id="He_1_3_164">גם אתה, בן עמי, אדיר אתה <fw type="pageNum">23</fw> במשק העולם ויש לאל ידך לעשות
                                              את אשר תחמיץ אותו עשיר, בן עמנו.<lb/> הבן לדרישת השעה
                                              ולאותותיה. הבן מה ידרש ממך חק הקדש, תן לעמך מאוצרותיך
                                              למען יגאל מגלותו <ref target="#note-capitalism" type="noteAnchor">*</ref>".</s>
@@ -14461,8 +14408,7 @@
                                              השומר הזקן ליד השער, על הדרך בה יגאל המלך, היא מספרת על
                                              מערת הקבר המצופה זהב ועל השוכב בה, המת הנערץ הרובץ
                                              כאריה על יצוע זהבו, על נבל הזהב אשר על הקיר ועל שלחן
-                                             הזהב, על העטרה ועל <milestone unit="26"/>
-                                             <fw type="pageNum">-23</fw> השרביט ועל ספר התהלים העשוי
+                                             הזהב, על העטרה ועל <fw type="pageNum">-23</fw> השרביט ועל ספר התהלים העשוי
                                              פז המונח פתוח לפניו. על הכד אשר למראשותי המלך ועל מי גן
                                              עדן אשר בו, על אזהרת הישיש לרחוץ את ידי המלך במים אלה
                                              למען יקום ויקבץ נפוצות עמו מכל קצוי הארץ אל בין חומות
@@ -14507,7 +14453,7 @@
                                              וגלי הים המקיפים את הספינה ינידום.</s>
                                         <lb/>
                                         <s xml:id="He_1_3_185"> ביום מסעם האחרון סרה האניה אל המיצר
-                                             המפריד בין איי יון המוריקים <milestone unit="27"/> ובאה
+                                             המפריד בין איי יון המוריקים ובאה
                                              אל המעבר בין משעולי הרי ארץ יון העתיקה ליד מצודת האלילה
                                              אתונה וחרבות עמודי אולמיה הנרחבים.</s>
                                         <s xml:id="He_1_3_186">"עולם אין סוף לו של רעיונות — פה בארץ
@@ -14530,7 +14476,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_1_4" type="chapter">
-                                   <milestone unit="28"/>
                                    <fw type="pageNum">24</fw>
                                    <pb xml:id="Heb_p6"/>
                                    <head type="chapter">ביאה</head>
@@ -14599,8 +14544,7 @@
                                         <s xml:id="He_1_4_026">לבה זע מעצר רגשותיה בראותה את
                                              "ירושלים" מטילה את עגנה בים, בים המלחך את אדמת המולדת.
                                              עיניה תרות את כל תנועות סירת השלטונות הקרבה אל הספינה
-                                             ובעיני רוחה תחזה את הילדים בהתכנסם סביב <milestone unit="29"/>
-                                             <fw type="pageNum">25</fw> האם ברכה ליד מעלות הספינה.
+                                             ובעיני רוחה תחזה את הילדים בהתכנסם סביב <fw type="pageNum">25</fw> האם ברכה ליד מעלות הספינה.
                                              בהתרגשות היא יורדת אל הסירה השניה המעלה אל הספינה את
                                              רופא הנמל הבוחן את בריאות העולים החדשים.</s>
                                         <lb/>
@@ -14665,8 +14609,7 @@
                                              יחסים אחרים וענין אחד מאשר תפקידה היוצר המיוחד במינו :
                                              ליצור בארץ המולדת נוף עלומים.</s>
                                         <s xml:id="He_1_4_046">יודעת היא כי עוז זה שואבת היא מתוך
-                                             דבקותה באלהיה ומתוך דבקותה בעמה תשאב <milestone unit="30"/>
-                                             <fw type="pageNum">26</fw> את הכוח להשריש עם חסר מולדת
+                                             דבקותה באלהיה ומתוך דבקותה בעמה תשאב <fw type="pageNum">26</fw> את הכוח להשריש עם חסר מולדת
                                              בקרקע הישנה החדשה.</s>
                                         <s xml:id="He_1_4_047">אף זאת תדע, כי על ילדים אלה אשר יגדלו
                                              פה לחיות חיי עבודה, כי מכשולים רבים צפויים להם בדרכם,
@@ -14731,8 +14674,7 @@
                                              שתף פעולה עם ברכה ולהיות לה לעזר בסידור חיי הילדים
                                              ובהיכון תכניות חנוכם.</s>
                                         <s xml:id="He_1_4_069">את נרתיק הכסף קבלה ברכה מאת הרב הזקן
-                                             אשר מסרו <milestone unit="31"/>
-                                             <fw type="pageNum">27</fw> לה בשם עדת הצפון.</s>
+                                             אשר מסרו <fw type="pageNum">27</fw> לה בשם עדת הצפון.</s>
                                         <s xml:id="He_1_4_070">זקני העדה הסירוהו מעל מזוזת הבית אשר
                                              שמש להם בית אלהים.</s>
                                         <s xml:id="He_1_4_071"> במשך מאתים שנה קדשה"מזוזה" זו את פתח
@@ -14798,8 +14740,7 @@
                                              הבנים וביד חנה העליזה. השאר נספחו גם הם אל המעגל ובלוית
                                              שירי עמה שרה חוללה עדה זו את מחולה הראשון על אדמת
                                              מולדתם החדשה.</s>
-                                        <s xml:id="He_1_4_093">ועליזה מכולם <milestone unit="32"/>
-                                             <fw type="pageNum">28</fw> הנריטה.</s>
+                                        <s xml:id="He_1_4_093">ועליזה מכולם <fw type="pageNum">28</fw> הנריטה.</s>
                                         <s xml:id="He_1_4_094">כל אהבתה לנוער, כל חרדתה עליו, כל כחה
                                              לסובבם ולגוננם ולהשרישם בצבור מתגלים במחול זה עם
                                              הילדים. וממנה נאצלת השמחה על השאר.<lb/> מקצב חיים בארץ
@@ -14812,7 +14753,6 @@
                               <div xml:id="Heb_2_1" type="chapter">
                                    <head type="section">2.מולדת</head>
                                    <lb/>
-                                   <milestone unit="33"/>
                                    <fw type="pageNum">29</fw>
                                    <pb xml:id="Heb_p7"/>
                                    <head type="chapter">כוכבים</head>
@@ -14874,8 +14814,7 @@
                                              משותפת במולדתנו אשר עלינו לכבשה, פלא זה גדול מהכילו ולא
                                              נוכל מצוא לו היום ניב שפתים.</s>
                                         <s xml:id="He_2_1_020">אך ניב זה, יימצא לנו, לכל אחד
-                                             ביצירתו, כי יצירת כל אחד מאתנו אינה <milestone unit="34"/>
-                                             <fw type="pageNum">30</fw> כי אם מאמץ אחד להגיע אל
+                                             ביצירתו, כי יצירת כל אחד מאתנו אינה <fw type="pageNum">30</fw> כי אם מאמץ אחד להגיע אל
                                              מטרתנו, גאולת אדמת המולדת.</s>
                                         <s xml:id="He_2_1_021">יפה המולדת עד כדי שכרון חושינו בכל עת
                                              ובכל שעה, היא כה אחוזה בנפשנו עד כי רק מצנורותיה את כל
@@ -14951,7 +14890,6 @@
                                              בארח חק זה אם לא.</s>
                                         <lb/>
                                         <s xml:id="He_2_1_049">
-                                             <milestone unit="35"/>
                                              <fw type="pageNum">31</fw> חרות זו בבחירה היא האשר אשר
                                              נועד לנו פה תחת שמי כוכבי מולדתנו.</s>
                                         <s xml:id="He_2_1_050">בכל אשר נפגש על שפת ימן של ערינו
@@ -15013,8 +14951,7 @@
                                              ילדים מאימת שודדים ומרצחים ועד היום הזה בו נפתחת מגלת
                                              חיינו החדשים במולדתנו העתיקה. אין פרידה לנו כל עוד אנו
                                              חיים, שנת ההכשרה להתישבותנו עתידה לחזק את קשרנו אם גם
-                                             לא <milestone unit="36"/>
-                                             <fw type="pageNum">32</fw> בסביבה אחת נעבוד.</s>
+                                             לא <fw type="pageNum">32</fw> בסביבה אחת נעבוד.</s>
                                         <s xml:id="He_2_1_069">אך הבה רעי ונחיה שנה זו של התפתחות
                                              חיי בני חורין בלי התחיבות וקשרי ברית למען נוכל ללכת איש
                                              איש בדרכו דרך חרות עד אשר נמצא דרך לאחד את הויתנו.</s>
@@ -15034,7 +14971,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_2_2" type="chapter">
-                                   <milestone unit="37"/>
                                    <fw type="pageNum">33</fw>
                                    <pb xml:id="Heb_p8"/>
                                    <head type="chapter">חבורה</head>
@@ -15092,7 +15028,6 @@
                                              לקבוץ משמר העמק הבנוי בראש גבעה ובית חנוכו הנאה.</s>
                                         <lb/>
                                         <s xml:id="He_2_2_015">
-                                             <milestone unit="38"/>
                                              <fw type="pageNum">34</fw> המכונית נעצרת בעיר המחוז
                                              שבעמק, בעפולה, עיר פרשת דרכים לכל חלקי הארץ.</s>
                                         <s xml:id="He_2_2_016">יוצאים מן המכונית, שואלים לשלום הרעים
@@ -15164,7 +15099,6 @@
                                              השכונה בקרבת העיר.</s>
                                         <lb/>
                                         <s xml:id="He_2_2_042">
-                                             <milestone unit="39"/>
                                              <fw type="pageNum">35</fw> יחד הם משוטטים בהדרכה צבי
                                              חברה מאז למדו בצוותא את תורת החנוך בחוצות העיר העתיקה
                                              אשר בהם זורם המון אדם, דמויות ססגוניות מבני עמם מארצות
@@ -15223,7 +15157,6 @@
                                              בעצוב דמות נפשו הצעירה של הילד ובפתוחה.</s>
                                         <s xml:id="He_2_2_059">ולא אדע איך אודה על כי זכיתי להתיצב
                                              בתוך חברתכם לפני יעוד זה." </s>
-                                        <milestone unit="40"/>
                                         <lb/>
                                         <fw type="pageNum">36</fw>
                                         <s xml:id="He_2_2_060">"צדקו דבריך — השיב צבי — </s>
@@ -15288,8 +15221,7 @@
                                         <s xml:id="He_2_2_079">בדרך צעדו לקראתה נערים עליזים מכפר
                                              הנוער אשר ירדו למושבה לשם עניניהם.</s>
                                         <s xml:id="He_2_2_080"> במפנהו האחרון של הדרך נתגלה הכפר
-                                             הנאה <milestone unit="41"/>
-                                             <fw type="pageNum">37</fw> מאיר שפיה במרום גבעה.</s>
+                                             הנאה <fw type="pageNum">37</fw> מאיר שפיה במרום גבעה.</s>
                                         <s xml:id="He_2_2_081">העגלה עברה דרך השער הרחב על יד בית
                                              הנוער ועל יד בית הספר עד לרחבה אשר ליד הבנין
                                              המרכזי.</s>
@@ -15356,7 +15288,6 @@
                                              האבן.</s>
                                         <lb/>
                                         <s xml:id="He_2_2_100">
-                                             <milestone unit="42"/>
                                              <fw type="pageNum">38</fw> ואחר נתאספו הילדים עם
                                              אורחיהם אל האולם הגדול ויערכו לפניהם לשלחן כל תנובת
                                              הכפר.</s>
@@ -15418,8 +15349,7 @@
                                              עצמם למצוא את טעמן ואת הגיונן של היצירות. הרצאת
                                              שיחותיהם בכתב נותנת למחנכים מושג על תכונת חויתם
                                              ועמקה.</s>
-                                        <s xml:id="He_2_2_115">פה במחברת זאת מוצאות <milestone unit="43"/>
-                                             <fw type="pageNum">39</fw> אתן את תכן שיחותם.</s>
+                                        <s xml:id="He_2_2_115">פה במחברת זאת מוצאות <fw type="pageNum">39</fw> אתן את תכן שיחותם.</s>
                                         <s xml:id="He_2_2_116"> אמש נסתה קבוצת הילדים הבוגרים לעמוד
                                              מעצמם בהסתמכות על ספר תולדות האמנות בתקופות ההיסטוריה
                                              השונות על ציירי התקופות השונות וחפשה פתרון לשאלה מפני
@@ -15442,7 +15372,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_2_3" type="chapter">
-                                   <milestone unit="44"/>
                                    <fw type="pageNum">40</fw>
                                    <pb xml:id="Heb_p9"/>
                                    <head type="chapter">חג הבכורים</head>
@@ -15511,8 +15440,7 @@
                                              ותמר.</s>
                                         <s xml:id="He_2_3_022">חג ברכה הוא חג הבכורים זה, יום פתרון
                                              חזון, יום תחית העם על אדמתו.</s>
-                                        <s xml:id="He_2_3_023">פרי <milestone unit="45"/>
-                                             <fw type="pageNum">41</fw> הארץ הוא היקר אשר יוכל העם
+                                        <s xml:id="He_2_3_023">פרי <fw type="pageNum">41</fw> הארץ הוא היקר אשר יוכל העם
                                              להקריב.</s>
                                         <s xml:id="He_2_3_024">מכל קצוי הארץ נהרו האורחים.</s>
                                         <lb/>
@@ -15587,7 +15515,6 @@
                                              </cit> .והנה מתקשרים הם בשלשלת מחול סביב הבמה ופותחים
                                              ברקוד עליז.</s>
                                         <s xml:id="He_2_3_050">מגרונות בני הנעורים בוקע השיר:</s>
-                                        <milestone unit="46"/>
                                         <fw type="pageNum">42</fw>
                                         <l> סלינו על כתפינו, ראשינו עטורים.</l>
                                         <l> מקצות הארץ באנו, הבאנו בכורים.</l>
@@ -15652,7 +15579,6 @@
                                         <s xml:id="He_2_3_073">בשורה ארוכה עומדים ילדי "אהבה" וכל
                                              אחד שם קמץ טיט על האבן.</s>
                                         <s xml:id="He_2_3_074">אז יקיפו את השטח הנרחב כשבראשם צועדים
-                                                  <milestone unit="47"/>
                                              <fw type="pageNum">43</fw> אנשי הועד הלאומי והם שולחים
                                              את ברכת שלומם לאדמה אשר תהיה להם למולדת.</s>
                                         <lb/>
@@ -15698,7 +15624,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_2_4" type="chapter">
-                                   <milestone unit="48"/>
                                    <fw type="pageNum">44</fw>
                                    <pb xml:id="Heb_p10"/>
                                    <head type="chapter">יום הנוער</head>
@@ -15762,8 +15687,7 @@
                                              העממית העברית הקדומה. נטל עלינו להחיות את ספר עמנו.</s>
                                         <s xml:id="He_2_4_020">את כתבי הקדש, ואת חוקותיו ולמצוא דרך
                                              לשימושן בתקופתנו.</s>
-                                        <s xml:id="He_2_4_021">נטל <milestone unit="49"/>
-                                             <fw type="pageNum">45</fw> עלינו לעצב צורת חנוך אנושי
+                                        <s xml:id="He_2_4_021">נטל <fw type="pageNum">45</fw> עלינו לעצב צורת חנוך אנושי
                                              על יסוד תרבות עמנו העתיקה ולמצוא מזיגה נאה בין חיינו
                                              המעשיים והרוחניים במולדתנו, אשר תשפיע על יצירת אפים של
                                              חניכינו.</s>
@@ -15816,7 +15740,6 @@
                                              אותו ושלובי ידים קרבו אל מקומותיהם בקצה השולחן.</s>
                                         <lb/>
                                         <s xml:id="He_2_4_038">
-                                             <milestone unit="50"/>
                                              <fw type="pageNum">46</fw> ובינתיים נהרו בני הנעורים
                                              החוגגים אל החצר הנרחבה. אלף איש, נערים ונערות שנתחסנו
                                              בשמש הדרום הלוהטת, שתגמשו בעבודתה בשדה, עליזים בהכרת
@@ -15865,8 +15788,7 @@
                                              הצעיר בחייו החדשים ולתת לו ניב בהווה.</s>
                                         <lb/>
                                         <s xml:id="He_2_4_051"> בני הנעורים נתכנסו על אבני
-                                             האמפיתיאטרון מסביב לדשאה ואתם המורים <milestone unit="51"/>
-                                             <fw type="pageNum">47</fw> והפועלים, הפקידים וקרובי
+                                             האמפיתיאטרון מסביב לדשאה ואתם המורים <fw type="pageNum">47</fw> והפועלים, הפקידים וקרובי
                                              המשפחות, ידידי המוסר והשכנים מן הכפרים הערביים.</s>
                                         <s xml:id="He_2_4_052">רק שטח נרחב מוקף עצים מאפילים הושאר
                                              לבמה.</s>
@@ -15916,8 +15838,7 @@
                                              בעית האחיות, כפי שהוצגה במחזה רחל ולאה על יסוד אגדת
                                              התלמוד. </s>
                                         <s xml:id="He_2_4_063c">תמונה זו אשר בה חזרה רחל אל חדר
-                                             האחיות לאחר שהתחתנה עם רעה יעקב על האות אשר <milestone unit="52"/>
-                                             <fw type="pageNum">48</fw> בה יכירה השאירה רושם עז. רחל
+                                             האחיות לאחר שהתחתנה עם רעה יעקב על האות אשר <fw type="pageNum">48</fw> בה יכירה השאירה רושם עז. רחל
                                              מוצאת את אחותה בחדר הבנות והיא נוגה ודמעות עלבון על
                                              פניה, כי שנואה היא, כי אמם בה האיש אשר לו נועדה לאשה. </s>
                                         <s xml:id="He_2_4_063d">רחל בעודה נרגשת מאהבת דודה הצעיר
@@ -15965,7 +15886,6 @@
                                              עוזו וחסדו".<ref target="#note-missingparagraph" type="noteAnchor">*</ref></s>
                                         <lb/>
                                         <s xml:id="He_2_4_080">
-                                             <milestone unit="53"/>
                                              <fw type="pageNum">49</fw> תחת האלה העתיקה ליד הכניסה
                                              אל כפר הנוער נתכנסה קבוצה אחרת של בחורים אשר שוחחה יחד
                                              עם מדריכה ראובן על שאלה סיגולו של הפרט בתוך החברה. שיחה
@@ -16018,7 +15938,6 @@
                                              העד אשר יביא לו יום מחר.</s>
                                         <lb/>
                                         <s xml:id="He_2_4_099">
-                                             <milestone unit="54"/>
                                              <fw type="pageNum">50</fw> כל בניו חביבים ויקרים לו
                                              ליעקב ולכל אחד הוא קובע את מקומו הנכון בחברה.</s>
                                         <s xml:id="He_2_4_100">בכל אחד הוא רואה את המשך התפתחות חייו
@@ -16068,7 +15987,6 @@
                                              ברכתני!"</s>
                                         <lb/>
                                         <s xml:id="He_2_4_114">
-                                             <milestone unit="55"/>
                                              <fw type="pageNum">51</fw> " נאמנים דבריך, ראובן —
                                              השיבה דבורה הצנועה מבן שמן — בדרשך מכל אחד מאתנו להכדיע
                                              ביחד לעצמו על מקומו בחברה לפי יכלתו. אך נראה לי כי
@@ -16113,8 +16031,7 @@
                                              הפרי רבי העסיס על נצתם העדינה המלבינה, מצהיבה ומאדימה
                                              באביב ועל קלה פרים המזהיב בסתו.</s>
                                         <s xml:id="He_2_4_123"> אוהבים הילדים את קבוצות העצים
-                                             הצפופות במטעי עצי הפרי, את טורי <milestone unit="56"/>
-                                             <fw type="pageNum">52</fw> העצים המתמרים בחורשת הזיתים,
+                                             הצפופות במטעי עצי הפרי, את טורי <fw type="pageNum">52</fw> העצים המתמרים בחורשת הזיתים,
                                              את דמויות העצים הבודדים אדירי המבע העולים בצוקי
                                              הסלעים.</s>
                                         <s xml:id="He_2_4_124">ראש השנה לאילנות בפרוס האביב, ביום בו
@@ -16177,7 +16094,6 @@
                                              התעודה המוטלת על ידי העם.</s>
                                         <s xml:id="He_2_4_141">מזכות זו נובעת החובה לפעולה למען העם,
                                              החובה לותר על חיי תענוגות לפרט, החובה לתת את הצואר בעול
-                                                  <milestone unit="57"/>
                                              <fw type="pageNum">53</fw> החברה.</s>
                                         <lb/>
                                         <s xml:id="He_2_4_142"> בהקשבה האזינו בני הנעורים את דברי
@@ -16236,8 +16152,7 @@
                                              מביננו לא תגיע ברכת החנוך אשר בבתי ספרנו.</s>
                                         <s xml:id="He_2_4_157">הזדמנות האשר הגדולה אשר נתנה לעמנו,
                                              חנוך הדור הצעיר הדופק בזרם מציף על שערי מולדתנו, כיצד
-                                             אנו מנצלים הזדמנות <milestone unit="58"/>
-                                             <fw type="pageNum">54</fw> זו, כיצד אנו מזכים את בני
+                                             אנו מנצלים הזדמנות <fw type="pageNum">54</fw> זו, כיצד אנו מזכים את בני
                                              נעורינו בתורה ובדעת, ביצירה ובהתפתחות</s>?<s> הראנו את
                                              הדרך לילדי עמנו לחיי חרות וצדק, כאשר קוינו בגולה למען
                                              העם היהודי בארץ ישראל״.</s>
@@ -16298,7 +16213,6 @@
                                              וכן הפך יחסם אל מנהיגי העם ליחס חרות וזקה.</s>
                                         <lb/>
                                         <s xml:id="He_2_4_177">
-                                             <milestone unit="59"/>
                                              <fw type="pageNum">55</fw> אחרי הסעודה צפוי היה לאורחים
                                              סיום החג.</s>
                                         <s xml:id="He_2_4_178">יוסף בכור תלמידי הכפר פנה אל הקהל: </s>
@@ -16345,8 +16259,7 @@
                                              ונערות בעצם ימי התבגרם, אחזו זה בכתף זה ובקצב ההורה,
                                              רקוד העממי החדש, שטפה כל אהבתה זה לזה ואהבתם אל ארץ
                                              מולדתם.</s>
-                                        <s xml:id="He_2_4_187">כל <milestone unit="60"/>
-                                             <fw type="pageNum">56</fw> געגועיהם לקרובי נפשם בנכר,
+                                        <s xml:id="He_2_4_187">כל <fw type="pageNum">56</fw> געגועיהם לקרובי נפשם בנכר,
                                              כל מסירותם לעתיד המפעל והחיים הסתומים, כל שאיפה
                                              להתחברות עם החברים לנעורים באו לידי בטוי בגלי רקודם
                                              העממי, והם לא נתנו חשך להם בהרעדת אברי גופם
@@ -16362,7 +16275,6 @@
 
                               <div xml:id="Heb_3_1" type="chapter">
                                    <head type="section"> 3. גאולה </head>
-                                   <milestone unit="61"/>
                                    <fw type="pageNum">57</fw>
                                    <pb xml:id="Heb_p11"/>
 
@@ -16413,8 +16325,7 @@
                                         <s xml:id="He_3_1_015"> פה נגלה לי לראשונה פתרון חלום געגועי
                                              ודרך הגשמתו בתוך עמי על אדמת מולדתי.</s>
                                         <s xml:id="He_3_1_016"> ועם כל זאת אדע היום, כי עוד לא הגיעה
-                                             שעתי לעלות אתך ולהתישב <milestone unit="62"/>
-                                             <fw type="pageNum">58</fw> על הקרקע.</s>
+                                             שעתי לעלות אתך ולהתישב <fw type="pageNum">58</fw> על הקרקע.</s>
                                         <s xml:id="He_3_1_017">מעיני לא ימוש גורל בני עמי הסובלים
                                              יסורים בגולה לאחר גזירת הגירושים בחדשים האחרונים
                                              והמנסים למצוא מפלט להם מתוך יאוש אחרון אל חופי
@@ -16468,8 +16379,7 @@
                                         <s xml:id="He_3_1_033"> בהשכמת הבקר יצאו דוד ורחל את כפר
                                              הנוער.</s>
                                         <s xml:id="He_3_1_034">הדרכים שקקו מהמון אדם: פלחים, בדוים,
-                                             עירונים בבגדיהם הארוכים והרחבים ובסודריהם — <milestone unit="63"/>
-                                             <fw type="pageNum">59</fw> המתנפנפים על ראשם.</s>
+                                             עירונים בבגדיהם הארוכים והרחבים ובסודריהם — <fw type="pageNum">59</fw> המתנפנפים על ראשם.</s>
                                         <s xml:id="He_3_1_035">המכונית הביאתם מעל לגשר האריות
                                              המצריים אל לוד העתיקה.</s>
                                         <s xml:id="He_3_1_036">משם הגיעו לתל אביב, העיר העברית
@@ -16522,8 +16432,7 @@
                                              הרחיב המחרשה את מעניתה.</s>
                                         <s xml:id="He_3_1_051">בדרך ראו הנוסעים תנועה רבה, ערבים
                                              נודדים בבגדי צבעוניהם, הצועדים בגאון ובאצילות, נשים
-                                             הנושאות על ראשן קערות מלאות פרות, רועים <milestone unit="64"/>
-                                             <fw type="pageNum">60</fw> עם עדרי, כבשיהם ועזיהם, הנה
+                                             הנושאות על ראשן קערות מלאות פרות, רועים <fw type="pageNum">60</fw> עם עדרי, כבשיהם ועזיהם, הנה
                                              עברה המכונית על פני <del>מנזר הטרפיסטים.אשר</del> בית
                                              ספר חקלאי גדול.</s>
                                         <s xml:id="He_3_1_052">ליד הדרך עמדו צעירים רבים לבושי
@@ -16580,8 +16489,7 @@
                                              שעל ומן חובת החסות אשר עלינו לפרוש על אחינו בגולה למען
                                              ימצאו מקלט בארצנו ולמען יחוברו אלינו, על מפעל
                                              בניננו.</s>
-                                        <s xml:id="He_3_1_070">בשעת הרת <milestone unit="65"/>
-                                             <fw type="pageNum">61</fw> גורל זו בעמנו לא מן הראוי
+                                        <s xml:id="He_3_1_070">בשעת הרת <fw type="pageNum">61</fw> גורל זו בעמנו לא מן הראוי
                                              לשאול לתאוותנו ולתשוקותיו של היחיד: עלינו להיות נכונים
                                              ללכת אל כל אשר יקראנו גורל עמנו.</s>
                                         <s xml:id="He_3_1_071">יבורך פעלכם והגיון ידידיכם ילווכם
@@ -16648,8 +16556,7 @@
                                              הרעים.</s>
                                         <lb/>
                                         <s xml:id="He_3_1_089"> אנשים אלה החזיקו בכל עוז בארחות
-                                             נדודיהם ממאות שנות גלותם גם בעיר <milestone unit="66"/>
-                                             <fw type="pageNum">62</fw> המזרחית העתיקה, בירושלים,
+                                             נדודיהם ממאות שנות גלותם גם בעיר <fw type="pageNum">62</fw> המזרחית העתיקה, בירושלים,
                                              ולא שינו את לבושם אשר הסכינו בו מתקופת האבירים של ימי
                                              הבינים באשכנז. מצנפות השער הרחבות ובגדי משים הארוכים
                                              ופסיעתם האטית העלו את זכרון תקופות זמן העבר בקרב עם
@@ -16703,8 +16610,7 @@
                                              באגרופיה כלפי הדלת.</s>
                                         <lb/>
                                         <s xml:id="He_3_1_109"> דליה הציעה את משכבה מחדש ונתנה לה
-                                             משהו לשתות מתוך בקבוק ארוז אשר <milestone unit="67"/>
-                                             <fw type="pageNum">63</fw> נשאה אתה.</s>
+                                             משהו לשתות מתוך בקבוק ארוז אשר <fw type="pageNum">63</fw> נשאה אתה.</s>
                                         <s xml:id="He_3_1_110">מוכי תמהון הביטו רחל ודוד זה אל
                                              זה.</s>
                                         <s xml:id="He_3_1_111">כה היו יהודים באותה ארץ אשר הם אומרים
@@ -16778,7 +16684,6 @@
                                              לעשות דבר אלא לבקר מפעם לפעם את הקטנה ולהקל ממנה את
                                              עבודתה הקשה.</s>
                                         <s xml:id="He_3_1_139">הנערה ישבה על שרפרף סמוך למשכבו
-                                                  <milestone unit="68"/>
                                              <fw type="pageNum">64</fw> של העוור וקראה באזניו את
                                              תפילות יום הכפורים והלה חזר במלמול על דבריה, </s>
                                         <s xml:id="He_3_1_140">עיני הקטנה היו כקופאות ופניה נעוים
@@ -16843,7 +16748,6 @@
                                              פעלו, עד אשר תוגן האם האחרונה בסבל מצוקתה".</s>
                                         <lb/>
                                         <s xml:id="He_3_1_163">
-                                             <milestone unit="69"/>
                                              <fw type="pageNum">65</fw> בדממ<choice>
                                                   <sic>י</sic>
                                                   <corr>ה</corr>
@@ -16882,7 +16786,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_3_2" type="chapter">
-                                   <milestone unit="70"/>
                                    <fw type="pageNum">66</fw>
                                    <pb xml:id="Heb_p12"/>
                                    <head type="chapter">הזדככות</head>
@@ -16953,8 +16856,7 @@
                                              ארץ המזרח ובין ארץ המערב. בים השיש הכחול בואכה איסטנבול
                                              המזהירה בדרך מעבר מוספור הצר, אל ים השחור.</s>
                                         <s xml:id="He_3_2_024">השמש עלתה ושקע חליפות. ירח וכוכבים
-                                             במשמורתיהם האירו <milestone unit="71"/>
-                                             <fw type="pageNum">67</fw> את השמים.</s>
+                                             במשמורתיהם האירו <fw type="pageNum">67</fw> את השמים.</s>
                                         <s xml:id="He_3_2_025">רחל כמעט אשר לא שתה לבה לכל אשר
                                              יסובבנה.</s>
                                         <s xml:id="He_3_2_026">אך בין הנסעים הבחינה את עינה את
@@ -17027,8 +16929,7 @@
                                         <s xml:id="He_3_2_050"> רחל ירדה אל הסירה.</s>
                                         <s xml:id="He_3_2_051">עיני יושביה נתלו בה בתמהון ובהן חלחלה
                                              השאלה ללא פתרון: מה תביאי את לנו, תקוה או בשורת
-                                             כליון</s>?<s> היא עמדה בין הנואשים <milestone unit="72"/>
-                                             <fw type="pageNum">68</fw> ודברה אל כל אחד, היא הפרידה
+                                             כליון</s>?<s> היא עמדה בין הנואשים <fw type="pageNum">68</fw> ודברה אל כל אחד, היא הפרידה
                                              בין המפליגים ובין הנשארים, גברים נשים וטף.</s>
                                         <s xml:id="He_3_2_052">אחרי הפרדת הקבוצה אשר התכוננה מתוך
                                              הסוסים לדרך החדשה שקעו הנשארים ביתר עצבות.</s>
@@ -17098,7 +16999,6 @@
                                         <s xml:id="He_3_2_073"> יהודי אחד בעל יזמה שכר על אחריותו
                                              הוא מתוך סכון רב אניה ישנה ודאג להעברתה אל עיר הנמל
                                              ביון תמורת תשלום אשר בלע את שארית רכוש המהג —
-                                                  <milestone unit="73"/>
                                              <fw type="pageNum">69</fw> המהגרים.</s>
                                         <s xml:id="He_3_2_074">ידוע ידעו הפליטים, כי בהגיעם לארץ
                                              ישראל לא תהיה פרוטה בידם ועליהם לסמוך על הגורל, כי
@@ -17164,8 +17064,7 @@
                                         <s xml:id="He_3_2_094"> מראשית נעורי אהבתי את מיכאל הצעיר,
                                              בנו של בעל אחוזה גדולה אשר בשבילו עבדו טחנות אבי.</s>
                                         <s xml:id="He_3_2_096">יחד טפלנו בפרה הממליטה ובולדותיה, יחד
-                                             סייענו <milestone unit="74"/>
-                                             <fw type="pageNum">70</fw> בימי הקציר בשדה ולבותינו
+                                             סייענו <fw type="pageNum">70</fw> בימי הקציר בשדה ולבותינו
                                              פעמו זה אל זה ברגשות אהבה צעירה.</s>
                                         <s xml:id="He_3_2_097">והנה באה תקופה חדשה לארצנו ומחוזנו
                                              עבר לעם הסלובקי אשר העמד תחת שלטון עריצי המלכות
@@ -17227,7 +17126,6 @@
                                              עברם של אחרים, אחים לסבל במסע המיגע.</s>
                                         <lb/>
                                         <s xml:id="He_3_2_122">
-                                             <milestone unit="75"/>
                                              <fw type="pageNum">71</fw> היא מצאה את הנער דן בן החמש
                                              עשרה אשר השקיף בעינים נוצצות וכמהות למרחקים.</s>
                                         <s xml:id="He_3_2_123">היא פנתה אליו בשפת ארצו, אך הוא השיב
@@ -17289,8 +17187,7 @@
                                              יושיעם </s>?<s xml:id="He_3_2_149"> יללת הקטנים גוזלת
                                              את מנוחת האמהות.</s>
                                         <s xml:id="He_3_2_150">אין כל אפשרות לטפול של ממש.</s>
-                                        <s xml:id="He_3_2_151">ובאחד הלילות — מקרה המות <milestone unit="76"/>
-                                             <fw type="pageNum">72</fw> הראשון. בסתר נושאים את גופת
+                                        <s xml:id="He_3_2_151">ובאחד הלילות — מקרה המות <fw type="pageNum">72</fw> הראשון. בסתר נושאים את גופת
                                              המת אל ירכתי הספינה ומטילים אותה הימה.</s>
                                         <lb/>
                                         <s xml:id="He_3_2_152"> בחשכת הלילה מהדדת הקריאה הנושנה אשר
@@ -17347,8 +17244,7 @@
                                         <s xml:id="He_3_2_177">אך בידם יעלה להמלט ולפתע נפגשות
                                              הקבוצות הבודדות בישוב יהודי קטן בעמק השרון.</s>
                                         <s xml:id="He_3_2_178">תושבי הכפר מברכים את הבאים בהסברת
-                                             פנים <milestone unit="77"/>
-                                             <fw type="pageNum">73</fw> ומביאים אותם מתוך שתיקה אל
+                                             פנים <fw type="pageNum">73</fw> ומביאים אותם מתוך שתיקה אל
                                              בתיהם ואל הישוב הגדול הקרוב ישלחו שליחים להזמין מכוניות
                                              מחברות התחבורה למען יובאו העולים אל ישוב בטוח בתוך
                                              עמם.</s>
@@ -17400,8 +17296,7 @@
                                              לפרופסור הזקן עם אוצר ספריו אל רעו למקצוע אשר בבית
                                              המדרש העליון על הר הצופים העוסק שם בחקירת הלשון העברית. </s>
                                         <s xml:id="He_3_2_194d">היא בקשה למצוא לקרל העלוב, לבן בלי
-                                             ארץ זה, <milestone unit="78"/>
-                                             <fw type="pageNum">74</fw> משפחה בתל אביב העיר היהודית
+                                             ארץ זה, <fw type="pageNum">74</fw> משפחה בתל אביב העיר היהודית
                                              אשר בה יוכל להרחיב את ידיעותיו ולסגל לו את אחת המלאכות. </s>
                                         <s xml:id="He_3_2_194e">היא משיחה את הדאגה לשלום המשפחות
                                                   <unclear>מברלין</unclear> והיא מבקשת לעזור להן
@@ -17420,7 +17315,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_3_3" type="chapter">
-                                   <milestone unit="79"/>
                                    <fw type="pageNum">75</fw>
                                    <pb xml:id="Heb_p13"/>
                                    <head type="chapter">התישבות<ref target="#note-Hanita" type="noteAnchor">*</ref></head>
@@ -17473,8 +17367,7 @@
                                              ובתי לבניו, אטמיו ורפתיו, אולם סעודותיו ובתי ילדיו, על
                                              מתקני מאורו ועל אהליו, על מכונות החרישה ועל בתי
                                              האמון.</s>
-                                        <s xml:id="He_3_3_015">בן יום ישוב אשר ידידיו <milestone unit="80"/>
-                                             <fw type="pageNum">76</fw> הכינוהו לחלקיו בעמל שבועות
+                                        <s xml:id="He_3_3_015">בן יום ישוב אשר ידידיו <fw type="pageNum">76</fw> הכינוהו לחלקיו בעמל שבועות
                                              רבים, את הקרשים ואת האבנים, את הגדרות ואת התייל, את
                                              היריעות ואת המחרשות. התכנית עובדה כל פרטיה
                                              ודקדוקיה.<lb/> המלאכה חולקה, לכל דבר נקבע מקומו.</s>
@@ -17527,8 +17420,7 @@
                                              מתוך האבקות מתמדת עם כוחות השודדים היושבים למו ארב<ref target="#note-lemoArev" type="noteAnchor">*</ref>
                                              ואומרים להכרית את מפעלנו בעודו באבו. </s>
                                         <s xml:id="He_3_3_034">לפנינו נושאים את משא הקורות והנסרים
-                                             להקמת המגדל אשר <milestone unit="81"/>
-                                             <fw type="pageNum">77</fw> מעליו נצפה יומם ולילה למען
+                                             להקמת המגדל אשר <fw type="pageNum">77</fw> מעליו נצפה יומם ולילה למען
                                              הגן אל אחינו אחיותנו, על בנינו ועל ביתנו לשמרם מדמדומי
                                              בקר עד דמדומי ערב, להכשיר את אחדותנו בישוב, לגאול את
                                              הקרקע לבנינו, לדור החדש.</s>
@@ -17585,8 +17477,7 @@
                                              בהנשאך חיש קל בדרכי הארץ.</s>
                                         <s xml:id="He_3_3_054">במושבה מחכה לנו מכונית העזרה הראשונה
                                              של "מגן דוד אדום" והמילדת אלישבע אשר תלווה אליכם.</s>
-                                        <s xml:id="He_3_3_055">לפני צאתנו <milestone unit="82"/>
-                                             <fw type="pageNum">78</fw> הואל ופקוד דוד יקירי על נשי
+                                        <s xml:id="He_3_3_055">לפני צאתנו <fw type="pageNum">78</fw> הואל ופקוד דוד יקירי על נשי
                                              חניתה להכין לרחל ולאחת מרעותיה מבין הפליטים יצועים בבית
                                              הלבנים כי שעת הלידה קרובה.</s>
                                         <lb/>
@@ -17649,8 +17540,7 @@
                                              ראובן העומד בראש פלוגת המגן בחניתה.</s>
                                         <s xml:id="He_3_3_075">היריות נאלמות מעט מעט ומרחוק נשמע קול
                                              מספד החברים.</s>
-                                        <s xml:id="He_3_3_076">ליד יצוע אחו — <milestone unit="83"/>
-                                             <fw type="pageNum">79</fw> אחותה נלחמת רות על חיי בן
+                                        <s xml:id="He_3_3_076">ליד יצוע אחו — <fw type="pageNum">79</fw> אחותה נלחמת רות על חיי בן
                                              אחותה המתרקמים עתה ובה בשעה היא מרגישה כי המולדת האהובה
                                              הנכבשת בעמל דרשה קרבן חדש, את רעה ראובן, אבי העובר אשר
                                              תשא עתה במעיה.</s>
@@ -17701,8 +17591,7 @@
                                              בהיותם בגולה, חברה אשר לא היתה כמוה לסבל קרבן, למאמץ
                                              הכוח.</s>
                                         <s xml:id="He_3_3_093"> חשים הם כי לא יפוג כאב זה כי אם
-                                             בהשתקעות מלאה במולדת, בהגברת מסירות <milestone unit="84"/>
-                                             <fw type="pageNum">80</fw> הנפש האחרונה לעמם על החיים
+                                             בהשתקעות מלאה במולדת, בהגברת מסירות <fw type="pageNum">80</fw> הנפש האחרונה לעמם על החיים
                                              האישיים, בהיקלטות גמורה בארץ חלומותיהם הנכספת, אשר היתה
                                              למציאות, למען יצמחו מקרקעה חיי עתיד לבניהם.</s>
                                         <lb/>
@@ -17716,7 +17605,6 @@
                                    </p>
                               </div>
                               <div xml:id="Heb_3_4" type="chapter">
-                                   <milestone unit="85"/>
                                    <fw type="pageNum">81</fw>
                                    <pb xml:id="Heb_p14"/>
                                    <head type="chapter">חול וכוכבים</head>
@@ -17776,7 +17664,6 @@
                                              לחיים חדשים.</s>
                                         <lb/>
                                         <s xml:id="He_3_4_016">
-                                             <milestone unit="86"/>
                                              <fw type="pageNum">82</fw> ובצעוד דוד על פני האדמה
                                              החומה יובילוהו רעיונותיו אל שעת צאתו מן העיר הגדולה
                                              שבצפון לפני ארבע שנים.</s>
@@ -17835,8 +17722,7 @@
                                              היום בו עלתה המכונית הראשונה אל השדה לעבודה ואת היום בו
                                              הובאו שלשה כלבים עזים לשמירת הישוב.</s>
                                         <s xml:id="He_3_4_028">לפני עיניו עוברת תהלוכת שלש מאות
-                                             המתנדבים בני <milestone unit="87"/>
-                                             <fw type="pageNum">83</fw> חיפה , מרובעי בתי החרושת
+                                             המתנדבים בני <fw type="pageNum">83</fw> חיפה , מרובעי בתי החרושת
                                              "שמן" ו"נשר" אשר נחלצו להקים את גדר התייל מסביב
                                              לנקודה.</s>
                                         <s xml:id="He_3_4_029">הוא זוכר את יום חג האילנות, כאשר עלו
@@ -17891,7 +17777,6 @@
                                         <s xml:id="He_3_4_039">הן גם שדות השרון והגליל, אדמת העמק
                                              ושומרון הפוריה כיום היו פעם שוממים וחרבים כאדמת חניתה,
                                              והן גם בנחלות מולדת אלו בנו והעפילו בני העם מתוך קשי
-                                                  <milestone unit="88"/>
                                              <fw type="pageNum">84</fw> אתחלה ויפרו בעמל כפיהם את
                                              האדמה הצחיחה וימצאו דרך ליצירת חברה וישלחו את כוחם
                                              בהקמת המולדת.</s>
