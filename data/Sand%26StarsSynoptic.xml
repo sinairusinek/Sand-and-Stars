@@ -6,10 +6,9 @@
                     <title type="sub">Sand und Sterne. Erzählung aus dem Lande Israel</title>
                     <author>Siddy Wronsky</author>
                     <editor xml:id="SR">Sinai Rusinek</editor>
-                    <editor xml:id="SP">Stephanie Pigorsch</editor>
                     <respStmt>
-                         <resp>German version OCR correction, annotation</resp>
-                         <name ref="#SP">Stephanie Pigorsch</name>
+                         <resp>Team coordination, German version OCR correction, annotation</resp>
+                         <name xml:id="SP">Stephanie Pigorsch</name>
                     </respStmt>
                     <respStmt>
                          <resp>Hebrew version OCR correction, annotation</resp>
