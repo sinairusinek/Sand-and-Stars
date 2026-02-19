@@ -5,18 +5,22 @@
                     <title>Sand and Stars: A Synoptic Digital Edition</title>
                     <title type="sub">Sand und Sterne. Erzählung aus dem Lande Israel</title>
                     <author>Siddy Wronsky</author>
-                    <editor xml:id="SR" role="principal">Sinai Rusinek</editor>
+                    <editor xml:id="SR">Sinai Rusinek</editor>
                     <editor xml:id="SP">Stephanie Pigorsch</editor>
                     <respStmt>
-                         <resp>Transcription, annotation, research</resp>
+                         <resp>German version OCR correction, annotation</resp>
+                         <name ref="#SP">Stephanie Pigorsch</name>
+                    </respStmt>
+                    <respStmt>
+                         <resp>Hebrew version OCR correction, annotation</resp>
                          <name xml:id="AH">Ayana Halpern</name>
                     </respStmt>
                     <respStmt>
-                         <resp>Transcription, annotation</resp>
+                         <resp>English version OCR correction, annotation</resp>
                          <name xml:id="DL">Dayana Lau</name>
                     </respStmt>
                     <respStmt>
-                         <resp>Technical development (XML-Planter, TEI Publisher)</resp>
+                         <resp>Technical development (<ref target="https://dh-dev.org">dh-dev.org</ref>)</resp>
                          <name xml:id="GS">Gil Shalit</name>
                     </respStmt>
                     <respStmt>
