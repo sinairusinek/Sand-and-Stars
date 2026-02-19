@@ -1,11 +1,11 @@
 {
   "title": "Sand and Stars: A Synoptic Digital Edition",
-  "description": "A synoptic documentary digital edition of Siddy Wronsky's unpublished novel 'Sand und Sterne. Erzählung aus dem Lande Israel' (Sand and Stars. A Tale from the Land of Israel), written between 1933 and 1939. The edition presents three parallel versions — the German original manuscript, a Hebrew translation by Yossef Achai, and an anonymous English translation — aligned at the sub-sentence level in TEI XML. The manuscript was discovered in 2017 at the Central Zionist Archive (CZA) in Jerusalem (A149/10). Created in the framework of the DZI digitisation project by the Elijah Lab for Digital Humanities, University of Haifa. This deposit contains the clean presentation version of the edition; the full research version with additional entity linking and certainty annotations is available on GitHub.",
+  "description": "A synoptic documentary digital edition of Siddy Wronsky's unpublished novel 'Sand und Sterne. Erzählung aus dem Lande Israel' (Sand and Stars. A Tale from the Land of Israel), written between 1933 and 1939. The edition presents three parallel versions — the German original manuscript, a Hebrew translation by Yossef Achai, and an anonymous English translation — aligned at the sub-sentence level in TEI XML. The manuscript was discovered in 2017 at the Central Zionist Archive (CZA) in Jerusalem (A149/10). Created in the framework of the DZI digitisation project by the e-Lijah Lab for Digital Humanities, University of Haifa. This deposit contains the clean presentation version of the edition; the full research version with additional entity linking and certainty annotations is available on GitHub.",
   "creators": [
     {
       "name": "Rusinek, Sinai",
       "orcid": "0000-0003-1043-7954",
-      "affiliation": "Elijah Lab for Digital Humanities, University of Haifa"
+      "affiliation": "e-Lijah Lab for Digital Humanities, University of Haifa"
     },
     {
       "name": "Pigorsch, Stephanie",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Shalit, Gil",
-      "affiliation": "Elijah Lab for Digital Humanities, University of Haifa"
+      "affiliation": "e-Lijah Lab for Digital Humanities, University of Haifa"
     },
     {
       "name": "Avnir, Yehudit"
@@ -60,6 +60,7 @@
       "resource_type": "software"
     }
   ],
+  "notes": "Funded by the funding programme for the digitization of cultural assets of the State of Berlin, implemented by the Forschungs- und Kompetenzzentrum Digitalisierung Berlin (Research and Competence Center Digitization, digiS), Zuse Institute Berlin.",
   "references": [
     "Avnir, Y., Halpern, A., Lau, D., Pigorsch, S., & Wilke, B. (Eds.). (2025). Siddy Wronsky. Sand und Sterne – חול וכוכבים – Sand and Stars. Edition of the 1930's Novel in the Context of Jewish History, Gender and Social Work. Nomos."
   ]

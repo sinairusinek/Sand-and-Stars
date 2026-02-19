@@ -58,7 +58,7 @@ templates/               HTML templates for the TEI Publisher interface
 | File | Description |
 |------|-------------|
 | `data/Sand%26StarsSynoptic.xml` | **Full research version** — TEI XML with all annotations including entity links (`@ana`), certainty markers (`@cert`), and semantic wrappers (`cit`, `bibl`, `epigraph`, `supplied`) |
-| `data/Sand%26StarsSynoptic-presentation.xml` | **Clean presentation version** — stripped of annotations not expressed by the ODD rendering. This is the version deposited to Zenodo and TextGrid |
+| `data/Sand%26StarsSynoptic-presentation.xml` | **Clean presentation version** — stripped of annotations not expressed by the ODD rendering. This is the version deposited to Zenodo |
 | `resources/odd/SandNStars.odd` | ODD file defining the TEI Publisher rendering |
 | `resources/css/SandNStars.css` | Custom stylesheet for the edition |
 | `templates/pages/SandStarsSynoptic.html` | Synoptic viewer template |
@@ -68,10 +68,10 @@ templates/               HTML templates for the TEI Publisher interface
 | Name | Role |
 |------|------|
 | **Sinai Rusinek** | Editor, project supervision, alignment, TEI encoding |
-| **Stephanie Pigorsch** | Editor, research coordination (DZI) |
-| **Ayana Halpern** | Transcription, annotation, research |
-| **Dayana Lau** | Transcription, annotation |
-| **Gil Shalit** | Technical development (XML-Planter, TEI Publisher) |
+| **Stephanie Pigorsch** | Team coordination, German version OCR correction, annotation |
+| **Ayana Halpern** | Hebrew version OCR correction, annotation |
+| **Dayana Lau** | English version OCR correction, annotation |
+| **Gil Shalit** | Technical development ([dh-dev.org](https://dh-dev.org)) |
 | **Yehudit Avnir** | Research consulting |
 
 ## Related Publication
@@ -86,4 +86,4 @@ This edition is licensed under [Creative Commons Attribution 4.0 International (
 
 Please cite this edition as:
 
-> Rusinek, S., Pigorsch, S., Halpern, A., Lau, D., Shalit, G., & Avnir, Y. (2025). *Sand and Stars: A Synoptic Digital Edition*. Elijah Lab for Digital Humanities, University of Haifa / DZI. https://github.com/sinairusinek/Sand-and-Stars
+> Rusinek, S., Pigorsch, S., Halpern, A., Lau, D., Shalit, G., & Avnir, Y. (2025). *Sand and Stars: A Synoptic Digital Edition*. e-Lijah Lab for Digital Humanities, University of Haifa / DZI. https://github.com/sinairusinek/Sand-and-Stars

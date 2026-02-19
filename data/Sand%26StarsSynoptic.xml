@@ -26,32 +26,26 @@
                          <resp>Research consulting</resp>
                          <name xml:id="YA">Yehudit Avnir</name>
                     </respStmt>
+                    <funder>Funded by the funding programme for the digitization of cultural
+                         assets of the State of Berlin, implemented by the Forschungs- und
+                         Kompetenzzentrum Digitalisierung Berlin (Research and Competence Center
+                         Digitization, digiS), Zuse Institute Berlin.</funder>
                </titleStmt>
                <publicationStmt>
-                    <publisher>Elijah Lab for Digital Humanities, University of Haifa</publisher>
+                    <publisher>e-Lijah Lab for Digital Humanities, University of Haifa</publisher>
                     <publisher>Deutsches Zentralinstitut für soziale Fragen (DZI)</publisher>
                     <date when="2025">2025</date>
                     <availability status="free">
                          <licence target="https://creativecommons.org/licenses/by/4.0/">
                               Creative Commons Attribution 4.0 International (CC-BY 4.0)
                          </licence>
-                         <p>This digital edition was prepared during 2023–2025 in the framework of the
-                              Deutsches Zentralinstitut für soziale Fragen (DZI) project (see
-                              https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/)
-                              by the project team, under Sinai Rusinek's supervision at the Elijah Lab,
-                              Haifa University, with support from the digiS funding programme (Zuse-Institute
-                              at the Free University Berlin). The sources (an original manuscript and its two
-                              translations) were transcribed and corrected using Transkribus
-                              (https://readcoop.eu/transkribus/). The synopsis alignment was done by S.R.
-                              using the XML-Planter (https://xmlplanter.dh-dev.com/), developed by Gil
-                              Shalit who also set up the TEI-Publisher platform for the edition.</p>
                     </availability>
                </publicationStmt>
                <sourceDesc>
                     <msDesc>
                          <msIdentifier>
                               <settlement>Jerusalem</settlement>
-                              <repository>Central Zionist Archive (CZA)</repository>
+                              <repository><ref target="http://www.zionistarchives.org.il">Central Zionist Archive (CZA)</ref></repository>
                               <idno>A149/10</idno>
                          </msIdentifier>
                          <msContents>
@@ -70,24 +64,37 @@
                                         annotations.</p>
                               </objectDesc>
                          </physDesc>
+                         <additional>
+                              <surrogates>
+                                   <ref target="http://www.zionistarchives.org.il/Pages/ArchiveItem.aspx?oi=0b001e158143d0c8&amp;ot=cza_tik">Catalogue record at the Central Zionist Archive</ref>
+                              </surrogates>
+                         </additional>
                     </msDesc>
                     <listBibl>
-                         <bibl type="related">Avnir, Y., Halpern, A., Lau, D., Pigorsch, S., &amp;
+                         <bibl type="related"><ref target="https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/">Avnir, Y., Halpern, A., Lau, D., Pigorsch, S., &amp;
                               Wilke, B. (Eds.). (2025). <title>Siddy Wronsky. Sand und Sterne –
                                    חול וכוכבים – Sand and Stars. Edition of the 1930's Novel in the
                                    Context of Jewish History, Gender and Social Work</title>.
-                              Nomos.</bibl>
+                              Nomos.</ref></bibl>
                     </listBibl>
                </sourceDesc>
           </fileDesc>
           <encodingDesc>
                <projectDesc>
-                    <p>This synoptic digital edition was created as part of the DZI digitisation
-                         project, uniting the German Central Institute for Social Issues (DZI) and the
-                         e-Lijah Lab for Digital Humanities at the University of Haifa, with support
-                         from the digiS funding programme. The project aims to bring Siddy Wronsky's
+                    <p>This synoptic digital edition was created during 2023–2025 as part of the
+                         <ref target="https://www.dzi.de/ueber-uns/geschichte/digitalisierungsprojekt-sand-und-sterne/">DZI</ref>
+                         digitisation project, uniting the Deutsches Zentralinstitut für soziale
+                         Fragen (DZI) and the e-Lijah Lab for Digital Humanities at the University
+                         of Haifa, with support from the digiS funding programme (Zuse-Institute at
+                         the Free University Berlin). The project aims to bring Siddy Wronsky's
                          multilingual novel to a modern audience through a parallel presentation of
                          the German original alongside its Hebrew and English translations.</p>
+                    <p>The sources (an original manuscript and its two translations) were
+                         transcribed and corrected using <ref target="https://readcoop.eu/transkribus/">Transkribus</ref>.
+                         The synopsis alignment was done by S.R. using the
+                         <ref target="https://xmlplanter.dh-dev.com/">XML-Planter</ref>, developed
+                         by Gil Shalit who also set up the TEI-Publisher platform for the
+                         edition.</p>
                </projectDesc>
                <editorialDecl>
                     <correction>
@@ -113,7 +120,7 @@
                     <segmentation>
                          <p>The three text versions were manually aligned at a sub-sentence level into
                               intellectually coherent sense sections (Sinnabschnitte) using the
-                              XML-Planter tool. Each segment carries an xml:id with the pattern
+                              <ref target="https://xmlplanter.dh-dev.com/">XML-Planter</ref> tool. Each segment carries an xml:id with the pattern
                               {Version}_{Section}_{Chapter}_{Segment} enabling cross-version
                               synchronisation.</p>
                     </segmentation>
@@ -142,7 +149,7 @@
                </creation>
           </profileDesc>
           <revisionDesc>
-               <change when="2025-02-19" who="#SR">Prepared edition for TextGrid and Zenodo deposit:
+               <change when="2026-02-19" who="#SR">Prepared edition for TextGrid and Zenodo deposit:
                     enriched teiHeader, added license, removed unused milestone elements,
                     fixed attribute typos.</change>
                <change when="2025-05-24" who="#SR">Correcting more typos, e.g. ברובוי-בריבוי</change>
