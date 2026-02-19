@@ -57,7 +57,8 @@ templates/               HTML templates for the TEI Publisher interface
 
 | File | Description |
 |------|-------------|
-| `data/Sand%26StarsSynoptic.xml` | The TEI XML synoptic edition (all three versions) |
+| `data/Sand%26StarsSynoptic.xml` | **Full research version** — TEI XML with all annotations including entity links (`@ana`), certainty markers (`@cert`), and semantic wrappers (`cit`, `bibl`, `epigraph`, `supplied`) |
+| `data/Sand%26StarsSynoptic-presentation.xml` | **Clean presentation version** — stripped of annotations not expressed by the ODD rendering. This is the version deposited to Zenodo and TextGrid |
 | `resources/odd/SandNStars.odd` | ODD file defining the TEI Publisher rendering |
 | `resources/css/SandNStars.css` | Custom stylesheet for the edition |
 | `templates/pages/SandStarsSynoptic.html` | Synoptic viewer template |
