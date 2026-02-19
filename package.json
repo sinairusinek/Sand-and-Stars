@@ -1,0 +1,8 @@
+{
+  "name" : "Sand-and-Stars",
+  "version" : "1.0.0",
+  "description" : "Sand and Stars",
+  "dependencies" : {
+    "@teipublisher/pb-components" : "1.24.18"
+  }
+}

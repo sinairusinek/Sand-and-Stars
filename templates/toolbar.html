@@ -1,0 +1,27 @@
+<app-toolbar class="toolbar" sticky="sticky">
+    <div id="toolbar-before" style="display: none"/>
+    <div id="toolbar-start" style="display: none"/>
+    <pb-restricted login="login">
+        <pb-ajax subscribe="transcription" emit="transcription" url="api/odd" method="post" data-template="lib:parse-params" event="pb-refresh" title="Recompile ODD" data-i18n="[title]menu.admin.recompile">
+            <h3 slot="title">
+                <pb-i18n key="menu.admin.recompile"/>
+            </h3>
+            <paper-icon-button icon="icons:refresh"/>
+        </pb-ajax>
+    </pb-restricted>
+    <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
+        <paper-button>
+            <iron-icon icon="icons:file-upload"/>Previous </paper-button>
+    </pb-navigation>
+    <div>
+        <pb-view load-css="resources/css/ltr.css" src="document1" xpath="//titleStmt/title" view="single">
+            <pb-param name="header" value="xxx"/>
+        </pb-view>
+    </div>
+    <pb-navigation emit="transcription" keyboard="right" subscribe="transcription" direction="forward" unit="page">
+        <paper-button> Next<iron-icon icon="icons:file-download"/>
+        </paper-button>
+    </pb-navigation>
+    <div id="toolbar-after" style="display: none"/>
+    <pb-progress subscribe="transcription" indeterminate="indeterminate" bottom-item="bottom-item"/>
+</app-toolbar>

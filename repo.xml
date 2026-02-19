@@ -1,0 +1,12 @@
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Sand and Stars</description>
+    <author/>
+    <status>beta</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <prepare>pre-install.xql</prepare>
+    <finish>post-install.xql</finish>
+    <target>Sand-and-Stars</target>
+    <permissions xmlns:repo="http://exist-db.org/xquery/repo" user="admin" group="tei" mode="rw-r--r--"/>
+<deployed>2023-06-11T10:33:39.37Z</deployed></meta>

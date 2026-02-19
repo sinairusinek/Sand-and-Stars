@@ -1,0 +1,25 @@
+.content {
+    direction: rtl !important;
+}
+
+.selectedPlace {
+    background-color: green !important;
+    color: #FFFFFF !important;
+    transition: all 2.5s ease-out;
+}
+
+.my-highlight-on {
+    background-color: var(--pb-highlight-color, #F9E976);
+    animation-name: keyFrameBackgroundColorIn;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+.my-highlight-off {
+    background-color: inherit;
+}
+
+body{
+background-color:green;
+}

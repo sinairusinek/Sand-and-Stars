@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# eXist-db build artifacts
+*.xar
+build/
+
+# Node
+node_modules/
+
+# Backup files
+*.bak
+*.orig

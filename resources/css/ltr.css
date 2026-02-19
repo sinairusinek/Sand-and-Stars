@@ -1,0 +1,17 @@
+/* should be specified as load-css="resources/css/ltr.css" of a pb-view displaying an ltr script */
+.content {
+    direction: ltr !important;
+}
+
+.tei-title3 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.selectedPlace {
+    background-color: green !important;
+    color: #FFFFFF !important;
+    transition: all 2.5s ease-out;
+}
+

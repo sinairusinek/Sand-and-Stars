@@ -1,0 +1,5 @@
+pb-navigation[disabled] {
+    display: block;
+    color:gray;
+    pointer-events:none;
+}
